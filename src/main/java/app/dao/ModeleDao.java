@@ -5,7 +5,7 @@ import java.util.List;
 
 import app.model.Modele;
 
-public interface DAOModele {
+public interface ModeleDao {
 	Modele createModele(Modele modele);
 	boolean deleteModele(int id);
 	boolean updateModele(Modele modele);

@@ -3,7 +3,7 @@ package app.dao;
 import java.util.List;
 import app.model.Marque;
 
-public interface DAOMarque {
+public interface MarqueDao {
 	Marque createMarque(Marque marque);
 	boolean deleteMarque(int id);
 	boolean updateMarque(Marque marque);
