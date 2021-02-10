@@ -16,9 +16,9 @@ public static Connection con = null;
 					appProps.getProperty("url"), 
 					appProps.getProperty("username"),
 					appProps.getProperty("password"));
+			System.out.println("Connection Operationnal");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("Connection Operationnal");
 	}
 }
