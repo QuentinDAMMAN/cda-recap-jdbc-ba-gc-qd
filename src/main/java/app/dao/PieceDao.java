@@ -6,7 +6,7 @@ import app.model.Piece;
 public interface PieceDao {
 	Piece createPiece(Piece piece);
 	boolean deletePiece(int id);
-	boolean updatePiece(Piece Piece, String champ);
+	boolean updatePiece(Piece Piece);
 	Piece findPieceById(int id);
 	List<Piece> listPieces();
 }

@@ -1,53 +1,40 @@
 package app.model;
 
+import java.util.Date;
+
 public class Piece {
-	private int reference;
-	private String Libelle;
-	private float prix;
-	private int stock;
+	private int id_piece;
+	private Date date_extraction;
 	private int id_vehicule;
-	private int id_categorie;
+	private String id_reference;
 
-	public Piece(int reference, String libelle, float prix, int stock, int id_vehicule, int id_categorie) {
-		super();
-		this.reference = reference;
-		Libelle = libelle;
-		this.prix = prix;
-		this.stock = stock;
+	public Piece(int id_piece, Date date_extraction,String id_reference, int id_vehicule ) {
+		this.id_piece = id_piece;
+		this.date_extraction = date_extraction;
 		this.id_vehicule = id_vehicule;
-		this.id_categorie = id_categorie;
+		this.id_reference = id_reference;
 	}
 
-	public int getReference() {
-		return reference;
+	public Piece(Date date_extraction, int id_vehicule, String id_reference) {
+		this.date_extraction = date_extraction;
+		this.id_vehicule = id_vehicule;
+		this.id_reference = id_reference;
 	}
 
-	public void setReference(int reference) {
-		this.reference = reference;
+	public int getId_piece() {
+		return id_piece;
 	}
 
-	public String getLibelle() {
-		return Libelle;
+	public void setId_piece(int id_piece) {
+		this.id_piece = id_piece;
 	}
 
-	public void setLibelle(String libelle) {
-		Libelle = libelle;
+	public Date getDate_extraction() {
+		return date_extraction;
 	}
 
-	public float getPrix() {
-		return prix;
-	}
-
-	public void setPrix(float prix) {
-		this.prix = prix;
-	}
-
-	public int getStock() {
-		return stock;
-	}
-
-	public void setStock(int stock) {
-		this.stock = stock;
+	public void setDate_extraction(Date date_extraction) {
+		this.date_extraction = date_extraction;
 	}
 
 	public int getId_vehicule() {
@@ -58,17 +45,17 @@ public class Piece {
 		this.id_vehicule = id_vehicule;
 	}
 
-	public int getId_categorie() {
-		return id_categorie;
+	public String getId_reference() {
+		return id_reference;
 	}
 
-	public void setId_categorie(int id_categorie) {
-		this.id_categorie = id_categorie;
+	public void setId_reference(String id_reference) {
+		this.id_reference = id_reference;
 	}
 
 	@Override
 	public String toString() {
-		return "Piece [reference=" + reference + ", Libelle=" + Libelle + ", prix=" + prix + ", stock=" + stock
-				+ ", id_vehicule=" + id_vehicule + ", id_categorie=" + id_categorie + "]";
+		return "Piece [id_piece=" + id_piece + ", date_extraction=" + date_extraction + ", id_vehicule=" + id_vehicule
+				+ ", id_reference=" + id_reference + "]";
 	}
 }
