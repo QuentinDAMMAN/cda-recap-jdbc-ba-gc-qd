@@ -7,8 +7,13 @@ public class Vehicule {
 	private int id_modele;
 
 	public Vehicule(int id_vehicule, int annee, int id_marque, int id_modele) {
-		super();
 		this.id_vehicule = id_vehicule;
+		this.annee = annee;
+		this.id_marque = id_marque;
+		this.id_modele = id_modele;
+	}
+	
+	public Vehicule(int annee, int id_marque, int id_modele) {
 		this.annee = annee;
 		this.id_marque = id_marque;
 		this.id_modele = id_modele;
