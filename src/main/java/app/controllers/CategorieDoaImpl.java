@@ -12,11 +12,14 @@ import java.util.List;
 
 public class CategorieDoaImpl implements CategorieDao {
     ResultSet res;
-   
+    String request;
+
     @Override
     public Categorie createCategorie(Categorie categorie) {
         PreparedStatement ps;
+
         int id = 0;
+
         try {
 
              ps = SQLConnection.con.prepareStatement(
