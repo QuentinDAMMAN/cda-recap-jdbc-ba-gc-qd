@@ -16,6 +16,12 @@ public class Transactions {
 		this.reference = reference;
 	}
 
+	public Transactions(Date date_Vente, Date date_Recuperation, int reference) {
+		this.date_Vente = date_Vente;
+		this.date_Recuperation = date_Recuperation;
+		this.reference = reference;
+	}
+	
 	public int getId_transactions() {
 		return id_transactions;
 	}
