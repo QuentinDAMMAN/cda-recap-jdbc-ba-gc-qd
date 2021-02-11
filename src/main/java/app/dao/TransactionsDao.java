@@ -8,6 +8,6 @@ public interface TransactionsDao {
 	Transactions createTransactions(Transactions transactions);
 	boolean deleteTransactions(int id);
 	boolean updateTransactions(Transactions transactions);
-	Transactions findPieceById(int id);
+	Transactions findTransactionById(int id);
 	List<Transactions> listTransactions();
 }
