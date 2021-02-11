@@ -1,12 +1,12 @@
 package app.model;
 
 public class Reference {
-	private int id_reference;
+	private String id_reference;
 	private String libelle;
-	private float prix;
+	private double prix;
 	private int id_categorie;
 
-	public Reference(int id_reference, String libelle, float prix, int id_categorie) {
+	public Reference(String id_reference, String libelle, double prix, int id_categorie) {
 		super();
 		this.id_reference = id_reference;
 		this.libelle = libelle;
@@ -14,18 +14,18 @@ public class Reference {
 		this.id_categorie = id_categorie;
 	}
 
-	public Reference(String libelle, float prix, int id_categorie) {
+	public Reference(String libelle, double prix, int id_categorie) {
 		super();
 		this.libelle = libelle;
 		this.prix = prix;
 		this.id_categorie = id_categorie;
 	}
 
-	public int getId_reference() {
+	public String getId_reference() {
 		return id_reference;
 	}
 
-	public void setId_reference(int id_reference) {
+	public void setId_reference(String id_reference) {
 		this.id_reference = id_reference;
 	}
 
@@ -37,11 +37,11 @@ public class Reference {
 		this.libelle = libelle;
 	}
 
-	public float getPrix() {
+	public double getPrix() {
 		return prix;
 	}
 
-	public void setPrix(float prix) {
+	public void setPrix(double prix) {
 		this.prix = prix;
 	}
 
