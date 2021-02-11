@@ -3,6 +3,8 @@ package app.controllers;
 import app.dao.CategorieDao;
 import app.model.Categorie;
 import app.sql.SQLConnection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CategorieDoaImpl implements CategorieDao {
+    private static  final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
     ResultSet res;
     String request;
 
@@ -32,6 +35,7 @@ public class CategorieDoaImpl implements CategorieDao {
                id = generatedKeys.getInt(1);
             }
             System.out.println(categorie.getLibelle() + " ajouté au categorie avec succès");
+
         } catch (SQLException se) {
             se.printStackTrace();
 
