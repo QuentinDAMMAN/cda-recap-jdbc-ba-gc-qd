@@ -11,6 +11,11 @@ public class Modele {
 		this.id_marque = id_marque;
 	}
 
+	public Modele(String libelle, int id_marque) {
+		this.libelle = libelle;
+		this.id_marque = id_marque;
+	}
+
 	public int getId_modele() {
 		return id_modele;
 	}
