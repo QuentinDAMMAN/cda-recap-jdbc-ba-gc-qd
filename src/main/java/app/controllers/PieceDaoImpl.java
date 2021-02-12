@@ -20,8 +20,10 @@ public class PieceDaoImpl implements PieceDao {
 		try {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request,
 					PreparedStatement.RETURN_GENERATED_KEYS);
-			stmt.setDate(1, java.sql.Date
-					.valueOf(piece.getDate_extraction().toInstant().atZone(ZoneId.of("Europe/Paris")).toLocalDate()));
+			java.sql.Date date = new java.sql.Date(piece.getDate_extraction().getTime());
+			System.out.println(date);
+			stmt.setDate(1, date);
+			System.out.println(stmt);
 			stmt.setString(2, piece.getId_reference());
 			stmt.setInt(3, piece.getId_vehicule());
 			stmt.executeUpdate();

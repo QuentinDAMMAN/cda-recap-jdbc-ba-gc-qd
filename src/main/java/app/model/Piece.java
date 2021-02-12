@@ -15,7 +15,7 @@ public class Piece {
 		this.id_reference = id_reference;
 	}
 
-	public Piece(Date date_extraction, int id_vehicule, String id_reference) {
+	public Piece(Date date_extraction,String id_reference,int id_vehicule) {
 		this.date_extraction = date_extraction;
 		this.id_vehicule = id_vehicule;
 		this.id_reference = id_reference;
