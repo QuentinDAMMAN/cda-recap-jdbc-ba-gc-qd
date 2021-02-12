@@ -37,8 +37,11 @@ public class Afficher3voitureToutePieceDisponible {
 		String request = bld.toString();
 		ResultSet results;
 		List<String[]> exportResults = new LinkedList<>();
+	//	Ihm.afficherClient("Combien de vehicule souhaitez vous voir ?");
+	//	int input = Ihm.IHM.inputInt();
 		try {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
+	//		stmt.setInt(1, input);
 			results = stmt.executeQuery();
 			ResultSetMetaData rsmd = results.getMetaData();
 			int columnNumber = rsmd.getColumnCount();
@@ -49,18 +52,17 @@ public class Afficher3voitureToutePieceDisponible {
 				titles[i-1] = rsmd.getColumnName(i);
 			}
 			exportResults.add(titles);
-			System.out.println(columnName.toString());
 			while (results.next()) {
 				String[] line = new String[columnNumber];
 				StringBuilder strBuild = new StringBuilder();
 				for (int i = 1; i <= columnNumber; i++) {
 					int size = rsmd.getColumnName(i).length();
 					String format = "%1$"+size+"s";
-					strBuild.append(String.format(format, results.getString(i)) + " ");
-					line[i-1]=results.getString(i);
+					String tempStr = String.format(format, results.getString(i));
+					strBuild.append(tempStr + " ");
+					line[i-1]=tempStr;
 				}
 				exportResults.add(line);
-				System.out.println(strBuild.toString());
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

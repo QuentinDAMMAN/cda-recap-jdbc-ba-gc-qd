@@ -14,7 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class VehiculeDaoImpl implements VehiculeDao {
-	final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
+	final Logger logger = LoggerFactory.getLogger(VehiculeDaoImpl.class);
 
 
 	@Override
@@ -62,17 +62,15 @@ public class VehiculeDaoImpl implements VehiculeDao {
 	}
 
 	@Override
-	public boolean updateVehicule(Vehicule vehicule) {
-		String request = "update Vehicule set Annee = ?, Id_Marque = ?, Id_Modele = ? where Id_Vehicule = ?";
+	public boolean updateVehicule(String champ, int value, int id) {
+		String request = "update Vehicule set "+champ+" = ? where Id_Vehicule = ?";
 		int results = 0;
 		try {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
-			stmt.setInt(1, vehicule.getAnnee());
-			stmt.setInt(2, vehicule.getId_marque());
-			stmt.setInt(3, vehicule.getId_modele());
-			stmt.setInt(4, vehicule.getId_vehicule());
+			stmt.setInt(1, value);
+			stmt.setInt(2, id);
 			results = stmt.executeUpdate();
-			logger.info("données entrés " + vehicule.getAnnee() +", "+ vehicule.getId_marque() +", " + vehicule.getAnnee() + " log id " + System.currentTimeMillis());
+			logger.info("données entrés libelle  " + champ +" = "+ value +", " + " log id " + System.currentTimeMillis());
 		} catch (SQLException e) {
 			e.printStackTrace();
 			logger.error(e.getMessage());

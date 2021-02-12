@@ -9,6 +9,10 @@ public class Marque {
 		this.libelle = libelle;
 	}
 
+	public Marque(String libelle) {
+		this.libelle = libelle;
+	}
+
 	public String getLibelle() {
 		return libelle;
 	}

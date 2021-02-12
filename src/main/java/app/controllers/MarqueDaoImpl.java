@@ -1,6 +1,7 @@
 package app.controllers;
 
 import app.dao.MarqueDao;
+import app.menu.saisie.Ihm;
 import app.model.Marque;
 import app.sql.SQLConnection;
 import org.slf4j.Logger;
@@ -14,7 +15,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class MarqueDaoImpl implements MarqueDao {
-	final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
+	final Logger logger = LoggerFactory.getLogger(MarqueDaoImpl.class);
 
 	@Override
 	public Marque createMarque(Marque marque) {
@@ -33,7 +34,7 @@ public class MarqueDaoImpl implements MarqueDao {
 
 			}
 		} catch (SQLIntegrityConstraintViolationException e) {
-			System.err.println(e.getMessage());
+			Ihm.afficherClient("La marque existe déjà");
 		} catch (SQLException e) {
 			e.printStackTrace();
 			logger.error(e.getMessage() + " log id " + System.currentTimeMillis() );
@@ -62,13 +63,13 @@ public class MarqueDaoImpl implements MarqueDao {
 	}
 
 	@Override
-	public boolean updateMarque(Marque marque) {
-		String request = "update Marque set Libelle = ? where Libelle = ?";
+	public boolean updateMarque(String champ, String value, int id) {
+		String request = "update Marque set "+champ+" = ? where id_marque = ?";
 		int results = 0;
 		try {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
-			stmt.setString(1, marque.getLibelle());
-			stmt.setString(2, marque.getLibelle());
+			stmt.setString(1, value);
+			stmt.setInt(2, id);
 			results = stmt.executeUpdate();
 			logger.info("maj marque, log id " + System.currentTimeMillis() );
 		} catch (SQLException e) {
@@ -105,7 +106,7 @@ public class MarqueDaoImpl implements MarqueDao {
 
 	@Override
 	public List<Marque> listMarques() {
-		String request = "select * from Marque";
+		String request = "select * from Marque order by id_marque";
 		ResultSet results = null;
 		List<Marque> listMarque = new LinkedList<Marque>();
 		try {
