@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RefVehiculeImpl implements RefVehiculeDoa {
-    final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
+    final Logger logger = LoggerFactory.getLogger(RefVehiculeImpl.class);
 
     @Override
     public ReferenceVehicule createReVehicule(ReferenceVehicule referenceVehicule) {
@@ -24,7 +24,6 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
             ps.setString(2, referenceVehicule.getId_Rererence());
             ps.executeUpdate();
             logger.info("refVehicule ajouté, log id " + System.currentTimeMillis());
-            ResultSet generatedKeys = ps.getGeneratedKeys();
                 System.out.println(referenceVehicule.getId_Rererence() + " ajouté au categorie avec succès");
         } catch (SQLException se) {
             se.printStackTrace();

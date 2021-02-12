@@ -13,8 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ModeleDaoImpl implements ModeleDao {
-	final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
-//	private static ModeleDaoEmpl modeleTest = new ModeleDaoEmpl();
+	final Logger logger = LoggerFactory.getLogger(ModeleDaoImpl.class);
 
 	@Override
 	public Modele createModele(Modele modele) {
@@ -32,7 +31,6 @@ public class ModeleDaoImpl implements ModeleDao {
 				return modele;
 			}
 		} catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.getMessage();
 			logger.error(String.valueOf(e));
 		}
@@ -49,7 +47,6 @@ public class ModeleDaoImpl implements ModeleDao {
 			logger.warn("Modele supprimé, log id " + System.currentTimeMillis());
 			return nbDeleted == 1;
 		} catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.getMessage();
 			logger.error(e.getMessage() + " log id " + System.currentTimeMillis() );
 		}
@@ -57,20 +54,22 @@ public class ModeleDaoImpl implements ModeleDao {
 	}
 
 	@Override
-	public boolean updateModele(Modele modele) {
-		String request = "update modele set Libelle =?, Id_Marque =? where Id_Modele =?";
+	public boolean updateModele(String champ, String value, int id) {
+		String request = "update modele set "+champ+" =? where Id_Modele =?";
 		int results = 0;
 		try {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
-			stmt.setString(1, modele.getLibelle());
-			stmt.setInt(2, modele.getId_marque());
-			stmt.setInt(3, modele.getId_modele());
+			if (champ.equalsIgnoreCase("libelle")) {
+				stmt.setString(1, value);
+			} else {
+					stmt.setInt(1,Integer.parseInt(value));
+			}
+			stmt.setInt(2, id);
 
 			results = stmt.executeUpdate();
-			logger.info("Maque mis à jour, log id  " + System.currentTimeMillis());
+			logger.info("Marque mis à jour, log id  " + System.currentTimeMillis());
 			return results == 1;
 		} catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.getMessage();
 
 
@@ -89,7 +88,6 @@ public class ModeleDaoImpl implements ModeleDao {
 				modele = new Modele(r.getInt("Id_Modele"), r.getString("Libelle"), r.getInt("Id_Marque"));
 			}
 		} catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.getMessage();
 		}
 		return modele;
@@ -105,104 +103,8 @@ public class ModeleDaoImpl implements ModeleDao {
 				modeles.add(new Modele(r.getInt("Id_Modele"), r.getString("Libelle"), r.getInt("Id_Marque")));
 			}
 		} catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.getMessage();
 		}
 		return modeles;
 	}
-	
-//	public static void main(String[] args) {
-//	SQLConnection.connect();
-//
-//	boolean stop = false;
-//	Scanner sc = new Scanner(System.in);
-//
-//	do {
-//		System.out.println("0 => quitter");
-//		System.out.println("1 => créer");
-//		System.out.println("2 => supprimer");
-//		System.out.println("3 => modifier");
-//		System.out.println("4 => Rechercher par Id");
-//		System.out.println("5 => Lister");
-//		System.out.print("\t>choix :");
-//		int i = sc.nextInt();
-//
-//		switch (i) {
-//
-//		case 0:// arrêt
-//			stop = true;
-//			sc.close();
-//			System.out.println("A bientot !");
-//			break;
-//
-//		case 1:
-////			Create	
-//			System.out.print("saisir le libellé du modèle :");
-//			String lib = sc.next();
-//			System.out.print("saisir l'id de la marque :");
-//			int marque = sc.nextInt();
-//
-//			Modele test = modeleTest.createModele(new Modele(lib, marque));
-//			if (test != null) {
-//				System.out.println("  > Modele créé avec succès (id :" + test.getId_modele() + ")");
-//			}
-//			break;
-//
-//		case 2:
-////			Delete
-//			System.out.print("saisir l'id du modèle :");
-//			int IdDelete = sc.nextInt();
-//			boolean testDelete = modeleTest.deleteModele(IdDelete);
-//			if (!testDelete) {
-//				System.out.println("  > erreur de suppression");
-//			} else if (testDelete) {
-//				System.out.println("  > Modele supprimé avec succès\n" + IdDelete);
-//			}
-//			break;
-//			
-//		case 3:
-////			Modifier
-//			System.out.print("saisir l'id du du modèle à modifier:");
-//			int newModel = sc.nextInt();
-//			System.out.print("saisir le nouveau libellé du modèle :");
-//			String newLib = sc.next();
-//			System.out.print("saisir un nouveau id de  marque :");
-//			int newIdMarque = sc.nextInt();
-//			boolean testUpdate = modeleTest.updateModele(new Modele(newModel,newLib,newIdMarque));
-//			if (!testUpdate) {
-//				System.out.println("  > erreur de modification");
-//			} else if(testUpdate) {
-//				System.out.println("  > Modele modifier avec succès (id :" +newModel+ ")");
-//			}
-//			break;
-//
-//		case 4:
-////			recherche par Id
-//			System.out.print("saisir l'id du modèle :");
-//			int IdModele = sc.nextInt();
-//			Modele testIdModele = modeleTest.findModeleeById(IdModele);
-//			if (testIdModele == null) {
-//				System.out.println("  > Modele inexistant");
-//			} else if (testIdModele != null) {
-//				System.out.println("  > Modele trouvé avec succès\n" + testIdModele);
-//			}
-//			break;
-//
-//		case 5:
-////			lister
-//			List<Modele> listModeles = modeleTest.listModeles();
-//
-//			for (Modele modele : listModeles) {
-//				System.out.println(modele);
-//			}
-//			break;
-//
-//		default:
-//			break;
-//		}
-//		System.out.println();
-//
-//	} while (!stop);
-//
-//}
 }

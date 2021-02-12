@@ -8,7 +8,7 @@ import app.model.Modele;
 public interface ModeleDao {
 	Modele createModele(Modele modele);
 	boolean deleteModele(int id);
-	boolean updateModele(Modele modele);
+	boolean updateModele(String champ,String value, int id);
 	Modele findModeleeById(int id);
 	List<Modele> listModeles();
 }

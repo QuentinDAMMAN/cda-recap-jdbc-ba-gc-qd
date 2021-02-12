@@ -15,10 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class TransactionsDaoImpl implements TransactionsDao {
-//	private static TransactionsDaoImpl transactionsTest = new TransactionsDaoImpl();
-//	private static String dateFormat = "dd-MM-yyyy";
-//	private static DateFormat df = new SimpleDateFormat(dateFormat);
-final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
+final Logger logger = LoggerFactory.getLogger(TransactionsDaoImpl.class);
 
 	@Override
 	public Transactions createTransactions(Transactions transactions) {
@@ -42,13 +39,11 @@ final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
 			}
 
 		} catch (SQLIntegrityConstraintViolationException e) {
-//			System.out.println("erreur de contraintes");
 			e.printStackTrace();
 
 		}
 
 		catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.printStackTrace();
 		}
 		return null;
@@ -62,7 +57,6 @@ final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
 			int nbDeleted = ps.executeUpdate();
 			return nbDeleted == 1;
 		} catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.printStackTrace();
 		}
 		return false;
@@ -85,7 +79,6 @@ final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
 			results = stmt.executeUpdate();
 			return results == 1;
 		} catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.printStackTrace();
 		}
 		return false;
@@ -105,7 +98,6 @@ final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
 						r.getDate("Date_Recuperation"), r.getInt("Id_Piece"));
 			}
 		} catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.printStackTrace();
 		}
 		return transactions;
@@ -122,7 +114,6 @@ final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
 						r.getDate("Date_Recuperation"), r.getInt("Id_Piece")));
 			}
 		} catch (SQLException e) {
-//			System.out.println("erreur sql");
 			e.printStackTrace();
 		}
 		return transactions;
@@ -135,137 +126,4 @@ final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
 		}
 		return sqlDate;
 	}
-
-//	public static void main(String[] args) {
-//		SQLConnection.connect();
-//
-//		boolean stop = false;
-//		Scanner sc = new Scanner(System.in);
-//
-//		do {
-//			System.out.println("0 => quitter");
-//			System.out.println("1 => créer");
-//			System.out.println("2 => supprimer");
-//			System.out.println("3 => modifier");
-//			System.out.println("4 => Rechercher par Id");
-//			System.out.println("5 => Lister");
-//			System.out.print("\t>choix :");
-//			int i = sc.nextInt();
-//
-//			switch (i) {
-//
-//			case 0:// arrêt
-//				stop = true;
-//				sc.close();
-//				System.out.println("A bientot !");
-//				break;
-//
-//			case 1:
-////			Create	
-//				System.out.print("saisir la date de vente (" + dateFormat + ") :");
-//				String venteStr = sc.next();
-//				System.out.print("saisir la date de recuperation (" + dateFormat + ") :");
-//				String recuperationStr = sc.next();
-//				System.out.print("saisir l'id de la piece:");
-//				int piece = sc.nextInt();
-//
-//				java.util.Date vente = null;
-//				java.util.Date recuperation = null;
-//
-//				try {
-//					vente = df.parse(venteStr);
-//					recuperation = df.parse(recuperationStr);
-////					System.out.println("****** string convertit en date");
-////					System.out.println(vente);
-////					System.out.println(recuperation);
-//
-//				} catch (ParseException e) {
-//					e.printStackTrace();
-//				}
-//
-//				System.out.println("********************************************");
-//
-//				Transactions test = transactionsTest.createTransactions(new Transactions(vente, recuperation, piece));
-//				if (test != null) {
-//					System.out.println("  > Transactions créé avec succès (id :" + test.getId_transactions() + ")");
-//				}
-//				break;
-//
-//			case 2:
-////			Delete
-//				System.out.print("saisir l'id du modèle :");
-//				int IdDelete = sc.nextInt();
-//				boolean testDelete = transactionsTest.deleteTransactions(IdDelete);
-//				if (!testDelete) {
-//					System.out.println("  > erreur de suppression");
-//				} else if (testDelete) {
-//					System.out.println("  > transaction supprimé avec succès (id :" + IdDelete + ")");
-//				}
-//				break;
-//
-//			case 3:
-////			Modifier
-//				System.out.print("saisir l'id de la transaction :");
-//				int idTransaction = sc.nextInt();
-//				System.out.print("saisir la nouvelle date de vente (" + dateFormat + ") :");
-//				String newVenteStr = sc.next();
-//				System.out.print("saisir la nouvelle de recuperation (" + dateFormat + ") :");
-//				String newRecuperationStr = sc.next();
-//				System.out.print("saisir le nouvelle id de la piece :");
-//				int newIdPiece = sc.nextInt();
-//
-//				java.util.Date newVente = null;
-//				java.util.Date newRecuperation = null;
-//
-//				try {
-//					newVente = df.parse(newVenteStr);
-//					newRecuperation = df.parse(newRecuperationStr);
-//
-////					System.out.println("****** string convertit en date");
-////					System.out.println(newVente);
-////					System.out.println(newRecuperation);
-//
-//				} catch (ParseException e) {
-//					e.printStackTrace();
-//				}
-//
-//				boolean testUpdate = transactionsTest
-//						.updateTransactions(new Transactions(idTransaction, newVente, newRecuperation, newIdPiece));
-//				if (!testUpdate) {
-//					System.out.println("  > erreur de modification");
-//				} else if (testUpdate) {
-//					System.out.println("  > Modele modifier avec succès (id :" + idTransaction + ")");
-//				}
-//				break;
-////
-//			case 4:
-////			recherche par Id
-//				System.out.print("saisir l'id du modèle :");
-//				int IdModele = sc.nextInt();
-//				Transactions testIdTransaction = transactionsTest.findTransactionById(IdModele);
-//				if (testIdTransaction == null) {
-//					System.out.println("  > Transaction inexistante");
-//				} else if (testIdTransaction != null) {
-//					System.out.println("  > Transaction trouvé avec succès\n" + testIdTransaction);
-//				}
-//				break;
-////
-//			case 5:
-////			lister
-//				List<Transactions> listTransactions = transactionsTest.listTransactions();
-//
-//				for (Transactions transaction : listTransactions) {
-//					System.out.println(transaction);
-//				}
-//				break;
-//
-//			default:
-//				break;
-//			}
-//			System.out.println();
-//
-//		} while (!stop);
-//
-//	}
-	
 }

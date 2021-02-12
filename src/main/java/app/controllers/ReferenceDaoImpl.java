@@ -14,7 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ReferenceDaoImpl implements ReferenceDao{
-	final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
+	final Logger logger = LoggerFactory.getLogger(ReferenceDaoImpl.class);
 
 
 	@Override
@@ -63,15 +63,23 @@ public class ReferenceDaoImpl implements ReferenceDao{
 	}
 
 	@Override
-	public boolean updateReference(Reference reference) {
-		String request = "update reference set Libelle = ? , Prix = ? , Id_Categorie = ? where id_reference = ?";
+	public boolean updateReference(String champ, String value, String id) {
+		String request = "update reference set "+champ+" = ? where id_reference = ?";
 		int results = 0;
 		try {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
-			stmt.setString(1, reference.getLibelle());
-			stmt.setDouble(2, reference.getPrix());
-			stmt.setInt(3, reference.getId_categorie());
-			stmt.setString(4, reference.getId_reference());
+			switch(champ) {
+			case "libelle":
+				stmt.setString(1, value);
+				break;
+			case "prix":
+				stmt.setDouble(1, Double.parseDouble(value));
+				break;
+			case "id_categorie":
+				stmt.setInt(1, Integer.parseInt(value));
+				break;
+			}
+			stmt.setString(2, id);
 			results = stmt.executeUpdate();
 			logger.info("MaJ Reference, log id " +System.currentTimeMillis());
 		} catch (SQLException e) {
