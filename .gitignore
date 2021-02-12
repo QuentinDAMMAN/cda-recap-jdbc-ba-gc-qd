@@ -29,4 +29,6 @@ db.properties
 .idea/
 /target/
 .gitignore
-
+log/
+.log
+.txt

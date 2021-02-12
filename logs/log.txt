@@ -2,3 +2,16 @@
 427  [main] WARN  app.controllers.CategorieDoaImpl - 24 test
 413  [main] WARN  app.controllers.CategorieDoaImpl - 24 test LID
 433  [main] WARN  app.controllers.CategorieDoaImpl - 24 test LID1613127007840
+157  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+159  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+160  [main] INFO  CLIENT - 73 0 - quitter le programme
+160  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+160  [main] INFO  CLIENT - 73 2 - Gestion des Modeles
+160  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+160  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+160  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+161  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+161  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+161  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+162  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
