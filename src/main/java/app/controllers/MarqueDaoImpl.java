@@ -3,6 +3,8 @@ package app.controllers;
 import app.dao.MarqueDao;
 import app.model.Marque;
 import app.sql.SQLConnection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,6 +14,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class MarqueDaoImpl implements MarqueDao {
+	final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
+
 	@Override
 	public Marque createMarque(Marque marque) {
 		String request = "Insert into Marque(Libelle) values (?)";
@@ -22,28 +26,34 @@ public class MarqueDaoImpl implements MarqueDao {
 			stmt.setString(1, marque.getLibelle());
 			stmt.executeUpdate();
 			results = stmt.getGeneratedKeys();
+			logger.info("Donnée entreer " + marque.getLibelle() + " log  id " + System.currentTimeMillis());
 			if (results.next()) {
 				marque.setId_marque(results.getInt(1));
 				return marque;
+
 			}
 		} catch (SQLIntegrityConstraintViolationException e) {
 			System.err.println(e.getMessage());
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis() );
 		}
 		return null;
 	}
 
 	@Override
 	public boolean deleteMarque(int id) {
+
 		String request = "delete from Marque where id_marque = ?";
 		int results = 0;
 		try {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
 			stmt.setInt(1, id);
 			results = stmt.executeUpdate();
+			logger.warn("Marque supprimé, log id " +System.currentTimeMillis());
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis());
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -60,8 +70,10 @@ public class MarqueDaoImpl implements MarqueDao {
 			stmt.setString(1, marque.getLibelle());
 			stmt.setString(2, marque.getLibelle());
 			results = stmt.executeUpdate();
+			logger.info("maj marque, log id " + System.currentTimeMillis() );
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis());
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -80,8 +92,10 @@ public class MarqueDaoImpl implements MarqueDao {
 			results = stmt.executeQuery();
 			results.next();
 			marque = new Marque(results.getInt(1),results.getString(2));
+			logger.info("marq trouve, log id "+ System.currentTimeMillis()  );
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage() +" log id " + System.currentTimeMillis() );
 		}
 		if (results != null) {
 			return marque;
@@ -103,10 +117,13 @@ public class MarqueDaoImpl implements MarqueDao {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis());
 		}
 		if (results != null) {
+			logger.info("retourner list de marques, log id " + System.currentTimeMillis());
 			return listMarque;
 		}
+		logger.info("list marques non trouver, log id  " + System.currentTimeMillis());
 		return null;
 	}
 

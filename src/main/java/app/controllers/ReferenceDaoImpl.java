@@ -10,8 +10,12 @@ import java.util.List;
 import app.dao.ReferenceDao;
 import app.model.Reference;
 import app.sql.SQLConnection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ReferenceDaoImpl implements ReferenceDao{
+	final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
+
 
 	@Override
 	public Reference createReference(Reference reference) {
@@ -22,14 +26,19 @@ public class ReferenceDaoImpl implements ReferenceDao{
 			stmt.setString(2, reference.getLibelle());
 			stmt.setDouble(3, reference.getPrix());
 			stmt.setInt(4, reference.getId_categorie());
+			logger.info("données entré " + reference.getLibelle() +", "+reference.getPrix()+", " + reference.getId_categorie() + " log id"+ System.currentTimeMillis());
 			int results = stmt.executeUpdate();
+
 			if (results==1) {
+				logger.info("Reference ajouté, log id  " + System.currentTimeMillis() );
 				return reference;
+
 			}
 		} catch (SQLIntegrityConstraintViolationException e) {
 			System.err.println(e.getMessage());	
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
 		}
 		return null;
 	}
@@ -42,8 +51,10 @@ public class ReferenceDaoImpl implements ReferenceDao{
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
 			stmt.setString(1, id);
 			results = stmt.executeUpdate();
+			logger.warn("Reference supprimé, log id " + System.currentTimeMillis());
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -62,8 +73,10 @@ public class ReferenceDaoImpl implements ReferenceDao{
 			stmt.setInt(3, reference.getId_categorie());
 			stmt.setString(4, reference.getId_reference());
 			results = stmt.executeUpdate();
+			logger.info("MaJ Reference, log id " +System.currentTimeMillis());
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -80,6 +93,7 @@ public class ReferenceDaoImpl implements ReferenceDao{
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
 			stmt.setString(1, id);
 			results = stmt.executeQuery();
+			logger.info("trouver un ref par son id, log id " + System.currentTimeMillis() );
 			if (results.next()) {
 				reference = new Reference(
 						results.getString(1), 
@@ -89,6 +103,7 @@ public class ReferenceDaoImpl implements ReferenceDao{
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
 		}
 		if (results != null) {
 			return reference;
@@ -112,8 +127,10 @@ public class ReferenceDaoImpl implements ReferenceDao{
 						results.getInt(4));
 				listReference.add(reference);
 			}
+			logger.info("retourner un list des refs, log id " +System.currentTimeMillis() );
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
 		}
 		if (results != null) {
 			return listReference;

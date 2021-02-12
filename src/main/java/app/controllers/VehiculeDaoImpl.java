@@ -10,8 +10,12 @@ import java.util.List;
 import app.dao.VehiculeDao;
 import app.model.Vehicule;
 import app.sql.SQLConnection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class VehiculeDaoImpl implements VehiculeDao {
+	final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
+
 
 	@Override
 	public Vehicule createVehicule(Vehicule vehicule) {
@@ -33,6 +37,7 @@ public class VehiculeDaoImpl implements VehiculeDao {
 			System.err.println(e.getMessage());
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return null;
 	}
@@ -45,8 +50,10 @@ public class VehiculeDaoImpl implements VehiculeDao {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
 			stmt.setInt(1, id);
 			results = stmt.executeUpdate();
+			logger.warn("Vehicule supprimé, log id " + System.currentTimeMillis() );
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -65,8 +72,10 @@ public class VehiculeDaoImpl implements VehiculeDao {
 			stmt.setInt(3, vehicule.getId_modele());
 			stmt.setInt(4, vehicule.getId_vehicule());
 			results = stmt.executeUpdate();
+			logger.info("données entrés " + vehicule.getAnnee() +", "+ vehicule.getId_marque() +", " + vehicule.getAnnee() + " log id " + System.currentTimeMillis());
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -92,6 +101,7 @@ public class VehiculeDaoImpl implements VehiculeDao {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		if (results != null) {
 			return vehicule;
@@ -117,6 +127,7 @@ public class VehiculeDaoImpl implements VehiculeDao {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		if (results != null) {
 			return listVehicule;

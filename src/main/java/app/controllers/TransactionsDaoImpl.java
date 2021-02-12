@@ -11,11 +11,14 @@ import java.util.List;
 import app.dao.TransactionsDao;
 import app.model.Transactions;
 import app.sql.SQLConnection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TransactionsDaoImpl implements TransactionsDao {
 //	private static TransactionsDaoImpl transactionsTest = new TransactionsDaoImpl();
 //	private static String dateFormat = "dd-MM-yyyy";
 //	private static DateFormat df = new SimpleDateFormat(dateFormat);
+final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
 
 	@Override
 	public Transactions createTransactions(Transactions transactions) {
