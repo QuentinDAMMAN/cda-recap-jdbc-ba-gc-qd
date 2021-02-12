@@ -13,9 +13,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CategorieDoaImpl implements CategorieDao {
+    public static void main(String[] args) {
+        CategorieDoaImpl catDo = new CategorieDoaImpl();
+        List<Categorie> categories = catDo.listCategories();
+        categories.stream().forEach(System.out::println);
+    }
+
     private static  final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
     ResultSet res;
     String request;
+
 
     @Override
     public Categorie createCategorie(Categorie categorie) {
