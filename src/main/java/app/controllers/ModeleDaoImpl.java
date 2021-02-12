@@ -9,8 +9,11 @@ import java.util.List;
 import app.dao.ModeleDao;
 import app.model.Modele;
 import app.sql.SQLConnection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ModeleDaoImpl implements ModeleDao {
+	final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
 //	private static ModeleDaoEmpl modeleTest = new ModeleDaoEmpl();
 
 	@Override
@@ -21,15 +24,19 @@ public class ModeleDaoImpl implements ModeleDao {
 			ps.setString(1, modele.getLibelle());
 			ps.setInt(2, modele.getId_marque());
 			ps.executeUpdate();
+			logger.info("donnée entere " + modele.getLibelle() +", " +modele.getId_modele()+", "+ modele.getId_marque() + " log id " + System.currentTimeMillis());
 			ResultSet resultat = ps.getGeneratedKeys();
 			if (resultat.next()) {
 				modele.setId_modele(resultat.getInt(1));
+				logger.info("model ajouté, log id " + System.currentTimeMillis());
 				return modele;
 			}
 		} catch (SQLException e) {
 //			System.out.println("erreur sql");
-			e.printStackTrace();
+			e.getMessage();
+			logger.error(String.valueOf(e));
 		}
+		logger.warn("return null, log id " + System.currentTimeMillis()  );
 		return null;
 	}
 
@@ -39,10 +46,12 @@ public class ModeleDaoImpl implements ModeleDao {
 			PreparedStatement ps = SQLConnection.con.prepareStatement("delete from modele where Id_Modele=?");
 			ps.setInt(1, id);
 			int nbDeleted = ps.executeUpdate();
+			logger.warn("Modele supprimé, log id " + System.currentTimeMillis());
 			return nbDeleted == 1;
 		} catch (SQLException e) {
 //			System.out.println("erreur sql");
-			e.printStackTrace();
+			e.getMessage();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis() );
 		}
 		return false;
 	}
@@ -56,11 +65,15 @@ public class ModeleDaoImpl implements ModeleDao {
 			stmt.setString(1, modele.getLibelle());
 			stmt.setInt(2, modele.getId_marque());
 			stmt.setInt(3, modele.getId_modele());
+
 			results = stmt.executeUpdate();
+			logger.info("Maque mis à jour, log id  " + System.currentTimeMillis());
 			return results == 1;
 		} catch (SQLException e) {
 //			System.out.println("erreur sql");
-			e.printStackTrace();
+			e.getMessage();
+
+
 		}
 		return false;
 	}
@@ -77,7 +90,7 @@ public class ModeleDaoImpl implements ModeleDao {
 			}
 		} catch (SQLException e) {
 //			System.out.println("erreur sql");
-			e.printStackTrace();
+			e.getMessage();
 		}
 		return modele;
 	}
@@ -93,7 +106,7 @@ public class ModeleDaoImpl implements ModeleDao {
 			}
 		} catch (SQLException e) {
 //			System.out.println("erreur sql");
-			e.printStackTrace();
+			e.getMessage();
 		}
 		return modeles;
 	}

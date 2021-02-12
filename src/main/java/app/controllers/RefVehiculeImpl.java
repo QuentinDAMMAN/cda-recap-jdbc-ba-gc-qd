@@ -3,6 +3,8 @@ package app.controllers;
 import app.dao.RefVehiculeDoa;
 import app.model.ReferenceVehicule;
 import app.sql.SQLConnection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RefVehiculeImpl implements RefVehiculeDoa {
+    final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
+
     @Override
     public ReferenceVehicule createReVehicule(ReferenceVehicule referenceVehicule) {
         try {
@@ -19,10 +23,12 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
             ps.setInt(1, referenceVehicule.getId_vehicule());
             ps.setString(2, referenceVehicule.getId_Rererence());
             ps.executeUpdate();
+            logger.info("refVehicule ajouté, log id " + System.currentTimeMillis());
             ResultSet generatedKeys = ps.getGeneratedKeys();
                 System.out.println(referenceVehicule.getId_Rererence() + " ajouté au categorie avec succès");
         } catch (SQLException se) {
             se.printStackTrace();
+            logger.error(se.getMessage());
             System.out.println(se.getMessage());
         }
         return new ReferenceVehicule(referenceVehicule.getId_Rererence(), referenceVehicule.getId_vehicule());
@@ -37,12 +43,15 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
             int i = ps.executeUpdate();
             if (i == 0) {
                 System.out.println("il n'y a pas de categorie avec l'id " + id);
+                logger.warn("refVehicule non trouvé, log id " + System.currentTimeMillis());
             } else {
                 System.out.println("le categorie avec l'id " + id + " est supprimé avec succès");
+                logger.info("Categorie ajouté, log id " + System.currentTimeMillis());
             }
             res = true;
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+            logger.error(throwables.getMessage());
             throwables.getSQLState();
         }
         return res;
@@ -66,6 +75,7 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
 //            res = true;
 //        } catch (SQLException throwables) {
 //            throwables.printStackTrace();
+       // logger.error(throwables.getMessage());
 //        }
         return res;
     }
@@ -83,8 +93,10 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
                         r.getInt("Id_Vehicule")
                 );
             }
+            logger.info("trouver un refVehicule par son id, log id " + System.currentTimeMillis());
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+            logger.error(throwables.getMessage());
         }
         return res;
     }
@@ -101,8 +113,10 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
                         r.getInt("Id_Vehicule")
                 ));
             }
+            logger.info("retourner un list des refs, log id "+ System.currentTimeMillis());
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+            logger.error(throwables.getMessage());
         }
         return res;
     }

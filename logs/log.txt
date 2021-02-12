@@ -1,0 +1,4 @@
+183  [main] WARN  app.Main - 15 Hello
+427  [main] WARN  app.controllers.CategorieDoaImpl - 24 test
+413  [main] WARN  app.controllers.CategorieDoaImpl - 24 test LID
+433  [main] WARN  app.controllers.CategorieDoaImpl - 24 test LID1613127007840

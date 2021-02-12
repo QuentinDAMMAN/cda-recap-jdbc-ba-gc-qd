@@ -11,8 +11,11 @@ import java.util.List;
 import app.dao.PieceDao;
 import app.model.Piece;
 import app.sql.SQLConnection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PieceDaoImpl implements PieceDao {
+	final Logger logger = LoggerFactory.getLogger(CategorieDoaImpl.class);
 	@Override
 	public Piece createPiece(Piece piece) {
 		String request = "insert into Piece(Date_Extraction,Id_Reference,Id_Vehicule) values (?,?,?)";
@@ -28,12 +31,14 @@ public class PieceDaoImpl implements PieceDao {
 			stmt.setInt(3, piece.getId_vehicule());
 			stmt.executeUpdate();
 			results = stmt.getGeneratedKeys();
+			logger.info("pièce ajouté, log id " + System.currentTimeMillis());
 			if (results.next()) {
 				piece.setId_piece(results.getInt(1));
 				return piece;
 			}
 		} catch (SQLIntegrityConstraintViolationException e) {
 			System.err.println(e.getMessage());
+			logger.error(e.getMessage());
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -48,8 +53,10 @@ public class PieceDaoImpl implements PieceDao {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
 			stmt.setInt(1, id);
 			results = stmt.executeUpdate();
+			logger.info("Piece supprimé, log id " +System.currentTimeMillis());
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -69,8 +76,10 @@ public class PieceDaoImpl implements PieceDao {
 			stmt.setInt(3, piece.getId_vehicule());
 			stmt.setInt(4, piece.getId_piece());
 			results = stmt.executeUpdate();
+			logger.info("données entrés " + piece.getId_reference()+",  " + piece.getDate_extraction()+ ", " + piece.getId_vehicule());
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -87,6 +96,7 @@ public class PieceDaoImpl implements PieceDao {
 			PreparedStatement stmt = SQLConnection.con.prepareStatement(request);
 			stmt.setInt(1, id);
 			results = stmt.executeQuery();
+			logger.info("id " + id + ", log id " + System.currentTimeMillis());
 			if (results.next()) {
 				piece = new Piece(
 						results.getInt(1), 
@@ -96,6 +106,7 @@ public class PieceDaoImpl implements PieceDao {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis());
 		}
 		if (results != null) {
 			return piece;
@@ -121,6 +132,7 @@ public class PieceDaoImpl implements PieceDao {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
 		}
 		if (results != null) {
 			return listPiece;
