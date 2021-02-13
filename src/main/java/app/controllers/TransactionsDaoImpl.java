@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import app.dao.TransactionsDao;
+import app.menu.saisie.Ihm;
 import app.model.Transactions;
 import app.sql.SQLConnection;
 import org.slf4j.Logger;
@@ -39,12 +40,10 @@ final Logger logger = LoggerFactory.getLogger(TransactionsDaoImpl.class);
 			}
 
 		} catch (SQLIntegrityConstraintViolationException e) {
-			e.printStackTrace();
-
-		}
-
-		catch (SQLException e) {
-			e.printStackTrace();
+			Ihm.afficherClient("Cette pièce est déjà vendue");
+			logger.error("erreur violation contrainte",e);
+		} catch (SQLException e) {
+			logger.error("erreur sql",e);
 		}
 		return null;
 	}
@@ -57,7 +56,7 @@ final Logger logger = LoggerFactory.getLogger(TransactionsDaoImpl.class);
 			int nbDeleted = ps.executeUpdate();
 			return nbDeleted == 1;
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return false;
 	}
@@ -79,7 +78,7 @@ final Logger logger = LoggerFactory.getLogger(TransactionsDaoImpl.class);
 			results = stmt.executeUpdate();
 			return results == 1;
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return false;
 	}
@@ -98,7 +97,7 @@ final Logger logger = LoggerFactory.getLogger(TransactionsDaoImpl.class);
 						r.getDate("Date_Recuperation"), r.getInt("Id_Piece"));
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return transactions;
 	}
@@ -114,7 +113,7 @@ final Logger logger = LoggerFactory.getLogger(TransactionsDaoImpl.class);
 						r.getDate("Date_Recuperation"), r.getInt("Id_Piece")));
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return transactions;
 	}

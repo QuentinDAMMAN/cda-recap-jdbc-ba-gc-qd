@@ -36,12 +36,8 @@ public class CategorieDaoImpl implements CategorieDao {
             if(generatedKeys.next()) {
                id = generatedKeys.getInt(1);
             }
-            System.out.println(categorie.getLibelle() + " ajouté au categorie avec succès");
-
         } catch (SQLException se) {
-            se.printStackTrace();
-
-
+        	logger.error("erreur sql",se);
         }
         return new Categorie(id, categorie.getLibelle());
     }
@@ -54,15 +50,9 @@ public class CategorieDaoImpl implements CategorieDao {
             ps = SQLConnection.con.prepareStatement("delete from  categorie where Id_Categorie = ?");
             ps.setInt(1,id);
             int i = ps.executeUpdate();
-            if(i == 0) {
-                System.out.println("il n'y a pas de categorie avec l'id " + id);
-            } else {
-            System.out.println("le categorie avec l'id " + id + " est supprimé avec succès");
-            }
             res = true;
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-            throwables.getSQLState();
+        } catch (SQLException e) {
+        	logger.error("erreur sql",e);
         }
         return res;
     }
@@ -76,14 +66,9 @@ public class CategorieDaoImpl implements CategorieDao {
             ps.setString(1,value);
             ps.setInt(2,id);
             int i = ps.executeUpdate();
-            if(i == 0) {
-                System.out.println("MAJ échec");
-            } else {
-                System.out.println("MAJ avec succès");
-            }
             res = true;
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException e) {
+        	logger.error("erreur sql",e);
         }
         return res;
     }
@@ -100,7 +85,7 @@ public class CategorieDaoImpl implements CategorieDao {
 			results.next();
 			categoerie = new Categorie(results.getInt(1),results.getString(2));
 		} catch (SQLException e) {
-			// e.printStackTrace();
+			logger.error("erreur sql",e);
 		}
 		if (results != null) {
 			return categoerie;
@@ -121,8 +106,8 @@ public class CategorieDaoImpl implements CategorieDao {
                         r.getString("Libelle")
                 ));
             }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (SQLException e) {
+        	logger.error("erreur sql",e);
         }
 
         return res;

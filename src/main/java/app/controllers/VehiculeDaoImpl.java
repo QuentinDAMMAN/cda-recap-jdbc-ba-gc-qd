@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import app.dao.VehiculeDao;
+import app.menu.saisie.Ihm;
 import app.model.Vehicule;
 import app.sql.SQLConnection;
 import org.slf4j.Logger;
@@ -34,10 +35,10 @@ public class VehiculeDaoImpl implements VehiculeDao {
 				return vehicule;
 			}
 		} catch (SQLIntegrityConstraintViolationException e) {
-			System.err.println(e.getMessage());
+			Ihm.afficherClient("Ce vehicule existe déjà");
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return null;
 	}
@@ -52,8 +53,7 @@ public class VehiculeDaoImpl implements VehiculeDao {
 			results = stmt.executeUpdate();
 			logger.warn("Vehicule supprimé, log id " + System.currentTimeMillis() );
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -72,8 +72,7 @@ public class VehiculeDaoImpl implements VehiculeDao {
 			results = stmt.executeUpdate();
 			logger.info("données entrés libelle  " + champ +" = "+ value +", " + " log id " + System.currentTimeMillis());
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -98,8 +97,7 @@ public class VehiculeDaoImpl implements VehiculeDao {
 						results.getInt(4));
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results != null) {
 			return vehicule;
@@ -124,8 +122,7 @@ public class VehiculeDaoImpl implements VehiculeDao {
 				listVehicule.add(vehicule);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results != null) {
 			return listVehicule;
