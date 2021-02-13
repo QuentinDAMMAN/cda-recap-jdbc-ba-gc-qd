@@ -24,6 +24,7 @@ public class Main {
 			newAction(actions, LesActions.ACTION_AFFICHER_CHIFFRE_AFFAIRE);
 			newAction(actions, LesActions.ACTION_PIECE_DISPO_VOITURE_RECENTE);
 			newAction(actions, LesActions.ACTION_EXPORT);
+			newAction(actions, LesActions.VENTE);
 			
 			boolean quit;
 			int vActionSaisie;

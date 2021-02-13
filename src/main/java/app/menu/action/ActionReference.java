@@ -5,19 +5,25 @@ import static app.menu.saisie.Ihm.IHM;
 import java.util.List;
 
 import app.controllers.CategorieDaoImpl;
+import app.controllers.RefVehiculeImpl;
 import app.controllers.ReferenceDaoImpl;
+import app.controllers.VehiculeDaoImpl;
 import app.menu.saisie.Ihm;
 import app.model.Reference;
+import app.model.ReferenceVehicule;
+import app.model.Vehicule;
 
 public class ActionReference extends Action {
 
 	private static final int ID = 4;
 	private static final String DESC = "Gestion des Références de pièces";
 	private ReferenceDaoImpl dao;
-
+	private RefVehiculeImpl daorefVeh;
+	
 	protected ActionReference() {
 		super(ID, DESC);
 		this.dao = new ReferenceDaoImpl();
+		this.daorefVeh  = new RefVehiculeImpl();
 	}
 
 	@Override
@@ -52,7 +58,27 @@ public class ActionReference extends Action {
 				Reference testCreation = dao.createReference(new Reference(idReference, name, prix, idSecondaire));
 				if (testCreation != null) {
 					Ihm.afficherClient(itemName + " créé avec succès (id :" + testCreation.getId_reference() + ")");
+					Ihm.afficherClient("Quels sont les vehicules compatibles avec cette "+itemName+" ?");
+					List<Vehicule> liste = new VehiculeDaoImpl().listVehicule();
+					for (Vehicule vehicule : liste) {
+						Ihm.afficherClient(vehicule.toString());
+					}
+					Ihm.afficherClient("Saisir les id séparés par une virgule");
+					String idsVehiculeCompatible = IHM.inputString();
+					if (!idsVehiculeCompatible.matches("(\\d*,*)*")) {
+						Ihm.afficherClient(idsVehiculeCompatible + " ne remplit pas les conditions");
+						break;
+					}
+					String[] arrayId = idsVehiculeCompatible.split(",");
+					
+					for (String string : arrayId) {
+						ReferenceVehicule refVehi=  daorefVeh.createReVehicule(new ReferenceVehicule(idReference, Integer.parseInt(string)));
+						if (refVehi !=null) {
+							Ihm.afficherClient("Association créée avec succès");
+						}
+					}
 				}
+				
 				break;
 			case 2:
 				Ihm.afficherClient("Veuillez saisir l'id de la " + itemName + " (6 Caractères alphanumérique)");
@@ -66,6 +92,9 @@ public class ActionReference extends Action {
 					Ihm.afficherClient("Erreur de suppression");
 				} else {
 					Ihm.afficherClient(itemName + " supprimée avec succès (id :" + idDelete + ")");
+					if (daorefVeh.deleteRefVehicule(idDelete)) {
+						Ihm.afficherClient("mise a jour des reference vehicule");
+					}
 				}
 				break;
 			case 3:
