@@ -16,5 +16,6 @@ public interface LesActions {
 	public static final ActionExport ACTION_EXPORT = new ActionExport();
 	public static final ActionExportExcel ACTION_EXPORT_EXCEL = new ActionExportExcel();
 	public static final Retour RETOUR = new Retour();
+	public static final ActionVente VENTE = new ActionVente();
 	
 }

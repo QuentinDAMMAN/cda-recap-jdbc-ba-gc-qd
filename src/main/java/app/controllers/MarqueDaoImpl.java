@@ -35,9 +35,9 @@ public class MarqueDaoImpl implements MarqueDao {
 			}
 		} catch (SQLIntegrityConstraintViolationException e) {
 			Ihm.afficherClient("La marque existe déjà");
+			logger.error("erreur sql",e);
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage() + " log id " + System.currentTimeMillis() );
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return null;
 	}
@@ -53,8 +53,7 @@ public class MarqueDaoImpl implements MarqueDao {
 			results = stmt.executeUpdate();
 			logger.warn("Marque supprimé, log id " +System.currentTimeMillis());
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage() + " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e);
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -73,8 +72,7 @@ public class MarqueDaoImpl implements MarqueDao {
 			results = stmt.executeUpdate();
 			logger.info("maj marque, log id " + System.currentTimeMillis() );
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage() + " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e);
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -95,8 +93,7 @@ public class MarqueDaoImpl implements MarqueDao {
 			marque = new Marque(results.getInt(1),results.getString(2));
 			logger.info("marq trouve, log id "+ System.currentTimeMillis()  );
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage() +" log id " + System.currentTimeMillis() );
+			logger.error(e.getMessage() +" log id " + System.currentTimeMillis() ,e);
 		}
 		if (results != null) {
 			return marque;
@@ -117,8 +114,7 @@ public class MarqueDaoImpl implements MarqueDao {
 				listMarque.add(marque);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage() + " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e);
 		}
 		if (results != null) {
 			logger.info("retourner list de marques, log id " + System.currentTimeMillis());

@@ -31,8 +31,7 @@ public class ModeleDaoImpl implements ModeleDao {
 				return modele;
 			}
 		} catch (SQLException e) {
-			e.getMessage();
-			logger.error(String.valueOf(e));
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		logger.warn("return null, log id " + System.currentTimeMillis()  );
 		return null;
@@ -47,8 +46,7 @@ public class ModeleDaoImpl implements ModeleDao {
 			logger.warn("Modele supprimé, log id " + System.currentTimeMillis());
 			return nbDeleted == 1;
 		} catch (SQLException e) {
-			e.getMessage();
-			logger.error(e.getMessage() + " log id " + System.currentTimeMillis() );
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return false;
 	}
@@ -70,9 +68,7 @@ public class ModeleDaoImpl implements ModeleDao {
 			logger.info("Marque mis à jour, log id  " + System.currentTimeMillis());
 			return results == 1;
 		} catch (SQLException e) {
-			e.getMessage();
-
-
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return false;
 	}
@@ -88,7 +84,7 @@ public class ModeleDaoImpl implements ModeleDao {
 				modele = new Modele(r.getInt("Id_Modele"), r.getString("Libelle"), r.getInt("Id_Marque"));
 			}
 		} catch (SQLException e) {
-			e.getMessage();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return modele;
 	}
@@ -103,7 +99,7 @@ public class ModeleDaoImpl implements ModeleDao {
 				modeles.add(new Modele(r.getInt("Id_Modele"), r.getString("Libelle"), r.getInt("Id_Marque")));
 			}
 		} catch (SQLException e) {
-			e.getMessage();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return modeles;
 	}

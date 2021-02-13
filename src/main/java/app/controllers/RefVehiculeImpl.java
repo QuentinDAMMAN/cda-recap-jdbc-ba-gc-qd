@@ -24,11 +24,8 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
             ps.setString(2, referenceVehicule.getId_Rererence());
             ps.executeUpdate();
             logger.info("refVehicule ajouté, log id " + System.currentTimeMillis());
-                System.out.println(referenceVehicule.getId_Rererence() + " ajouté au categorie avec succès");
-        } catch (SQLException se) {
-            se.printStackTrace();
-            logger.error(se.getMessage());
-            System.out.println(se.getMessage());
+        } catch (SQLException e) {
+        	logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
         }
         return new ReferenceVehicule(referenceVehicule.getId_Rererence(), referenceVehicule.getId_vehicule());
     }
@@ -41,17 +38,13 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
             ps.setString(1, id);
             int i = ps.executeUpdate();
             if (i == 0) {
-                System.out.println("il n'y a pas de categorie avec l'id " + id);
                 logger.warn("refVehicule non trouvé, log id " + System.currentTimeMillis());
             } else {
-                System.out.println("le categorie avec l'id " + id + " est supprimé avec succès");
                 logger.info("Categorie ajouté, log id " + System.currentTimeMillis());
             }
             res = true;
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-            logger.error(throwables.getMessage());
-            throwables.getSQLState();
+        } catch (SQLException e) {
+        	logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
         }
         return res;
 
@@ -59,24 +52,7 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
 
     @Override
     public boolean updateRefVehicule(String referenceVehicule, String id) {
-        boolean res = false;
-//        PreparedStatement ps;
-//        try {
-//            ps = SQLConnection.con.prepareStatement("update referencevehicule set Id_Reference  = ? where Id_Reference  = ?");
-//            ps.setString(1,referenceVehicule);
-//            ps.setString(2,id);
-//            int i = ps.executeUpdate();
-//            if(i == 0) {
-//                System.out.println("MAJ échec");
-//            } else {
-//                System.out.println("MAJ avec succès");
-//            }
-//            res = true;
-//        } catch (SQLException throwables) {
-//            throwables.printStackTrace();
-       // logger.error(throwables.getMessage());
-//        }
-        return res;
+        return false;
     }
 
     @Override
@@ -93,9 +69,8 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
                 );
             }
             logger.info("trouver un refVehicule par son id, log id " + System.currentTimeMillis());
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-            logger.error(throwables.getMessage());
+        } catch (SQLException e) {
+        	logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
         }
         return res;
     }
@@ -113,9 +88,8 @@ public class RefVehiculeImpl implements RefVehiculeDoa {
                 ));
             }
             logger.info("retourner un list des refs, log id "+ System.currentTimeMillis());
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-            logger.error(throwables.getMessage());
+        } catch (SQLException e) {
+        	logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
         }
         return res;
     }

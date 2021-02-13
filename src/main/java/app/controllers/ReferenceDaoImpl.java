@@ -35,10 +35,9 @@ public class ReferenceDaoImpl implements ReferenceDao{
 
 			}
 		} catch (SQLIntegrityConstraintViolationException e) {
-			System.err.println(e.getMessage());	
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return null;
 	}
@@ -53,8 +52,7 @@ public class ReferenceDaoImpl implements ReferenceDao{
 			results = stmt.executeUpdate();
 			logger.warn("Reference supprimé, log id " + System.currentTimeMillis());
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -83,8 +81,7 @@ public class ReferenceDaoImpl implements ReferenceDao{
 			results = stmt.executeUpdate();
 			logger.info("MaJ Reference, log id " +System.currentTimeMillis());
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -110,8 +107,7 @@ public class ReferenceDaoImpl implements ReferenceDao{
 						results.getInt(4));
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results != null) {
 			return reference;
@@ -137,8 +133,7 @@ public class ReferenceDaoImpl implements ReferenceDao{
 			}
 			logger.info("retourner un list des refs, log id " +System.currentTimeMillis() );
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage()+ " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results != null) {
 			return listReference;

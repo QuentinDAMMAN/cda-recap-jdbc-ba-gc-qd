@@ -38,10 +38,9 @@ public class PieceDaoImpl implements PieceDao {
 				return piece;
 			}
 		} catch (SQLIntegrityConstraintViolationException e) {
-			System.err.println(e.getMessage());
-			logger.error(e.getMessage());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		return null;
 	}
@@ -56,8 +55,7 @@ public class PieceDaoImpl implements PieceDao {
 			results = stmt.executeUpdate();
 			logger.info("Piece supprimé, log id " + System.currentTimeMillis());
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -86,8 +84,7 @@ public class PieceDaoImpl implements PieceDao {
 			results = stmt.executeUpdate();
 			logger.info("données entrés libelle du champ " + champ + ", value =  " + value + ", id = " + id);
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results == 1) {
 			return Boolean.TRUE;
@@ -110,8 +107,7 @@ public class PieceDaoImpl implements PieceDao {
 						results.getString(3), results.getInt(4));
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage() + " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results != null) {
 			return piece;
@@ -133,8 +129,7 @@ public class PieceDaoImpl implements PieceDao {
 				listPiece.add(piece);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
-			logger.error(e.getMessage() + " log id " + System.currentTimeMillis());
+			logger.error(e.getMessage() + " log id " + System.currentTimeMillis(),e );
 		}
 		if (results != null) {
 			return listPiece;
