@@ -12,7 +12,7 @@ import app.menu.saisie.Ihm;
 public final class ActionExportExcel extends Action {
 
 	private static final int ID = 1;
-	private static final String DESC = "Export Excel";
+	private static final String DESC = "Export EXCEL";
 	
 	public ActionExportExcel() {
 		super(ID, DESC);
