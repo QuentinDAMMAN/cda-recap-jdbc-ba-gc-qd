@@ -20,6 +20,7 @@ final class ActionExport extends Action {
 		TreeMap<Integer,Action> actions = new TreeMap<>();
 		newAction(actions, LesActions.RETOUR);
 		newAction(actions, LesActions.ACTION_EXPORT_EXCEL);
+		newAction(actions, LesActions.ACTION_EXPORT_HTML);
 		boolean returnMenu;
 		int vActionSaisie;
 		do {

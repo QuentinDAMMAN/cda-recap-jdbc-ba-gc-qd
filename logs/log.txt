@@ -4841,3 +4841,1219 @@ Saisissez une action
 3651 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
 3651 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
 3654 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/referencesvehicules.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+840  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 16:04:27 CET 2021 duration: 1 connection: 422 statement: 999 resultset: 0 message: SET autocommit=1
+845  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 16:04:27 CET 2021 duration: 11 connection: 422 statement: 999 resultset: 0
+878  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+879  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+881  [main] INFO  CLIENT - 73 0 - quitter le programme
+882  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+882  [main] INFO  CLIENT - 73 2 - Gestion des Modeles
+883  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+883  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+884  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+884  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+884  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+885  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+886  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+886  [main] INFO  CLIENT - 73 10 - Vente
+3880 [main] INFO  CLIENT - 73 --- Menu Marque ---
+3880 [main] INFO  CLIENT - 73   0 - Pour revenir au Menu
+3880 [main] INFO  CLIENT - 73   1 - Ajouter Marque
+3880 [main] INFO  CLIENT - 73   2 - Supprimer Marque
+3880 [main] INFO  CLIENT - 73   3 - Mettre à jour Marque
+3881 [main] INFO  CLIENT - 73   4 - Voir Marque
+3881 [main] INFO  CLIENT - 73   5 - Voir liste Marque
+10180 [main] INFO  CLIENT - 73 Retour au menu
+10181 [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+10181 [main] INFO  CLIENT - 73 0 - quitter le programme
+10182 [main] INFO  CLIENT - 73 1 - Gestion des Marques
+10182 [main] INFO  CLIENT - 73 2 - Gestion des Modeles
+10182 [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+10182 [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+10183 [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+10183 [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+10183 [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+10183 [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+10184 [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+10184 [main] INFO  CLIENT - 73 10 - Vente
+13599 [main] INFO  CLIENT - 73 --- Menu Export --- 
+13599 [main] INFO  CLIENT - 73 Saisissez une action
+13599 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+13600 [main] INFO  CLIENT - 73 1 - Export Excel
+13600 [main] INFO  CLIENT - 73 2 - Export HTML
+16229 [main] INFO  CLIENT - 73 --- Menu Export Format EXCEL --- 
+16229 [main] INFO  CLIENT - 73 Saisissez une action
+16229 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+16229 [main] INFO  CLIENT - 73 1 - Listes des pièces pour les 3 voitures les plus récentes
+16230 [main] INFO  CLIENT - 73 2 - Listes des chiffres d'affaires annuels
+18392 [main] INFO  CLIENT - 73 Retour au menu principal !
+18392 [main] INFO  CLIENT - 73 --- Menu Export --- 
+18393 [main] INFO  CLIENT - 73 Saisissez une action
+18393 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+18393 [main] INFO  CLIENT - 73 1 - Export Excel
+18393 [main] INFO  CLIENT - 73 2 - Export HTML
+702  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 16:07:36 CET 2021 duration: 0 connection: 423 statement: 999 resultset: 0 message: SET autocommit=1
+707  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 16:07:36 CET 2021 duration: 11 connection: 423 statement: 999 resultset: 0
+734  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+734  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+735  [main] INFO  CLIENT - 73 0 - quitter le programme
+736  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+736  [main] INFO  CLIENT - 73 2 - Gestion des Modeles
+736  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+736  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+736  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+737  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+737  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+737  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+737  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+737  [main] INFO  CLIENT - 73 10 - Vente
+7851 [main] INFO  CLIENT - 73 --- Menu Export --- 
+7851 [main] INFO  CLIENT - 73 Saisissez une action
+7852 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+7852 [main] INFO  CLIENT - 73 1 - Export Excel
+7852 [main] INFO  CLIENT - 73 2 - Export HTML
+688  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 16:18:56 CET 2021 duration: 1 connection: 424 statement: 999 resultset: 0 message: SET autocommit=1
+693  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 16:18:56 CET 2021 duration: 10 connection: 424 statement: 999 resultset: 0
+720  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+720  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+721  [main] INFO  CLIENT - 73 0 - quitter le programme
+721  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+722  [main] INFO  CLIENT - 73 2 - Gestion des Modeles
+722  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+722  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+722  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+722  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+723  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+723  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+723  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+723  [main] INFO  CLIENT - 73 10 - Vente
+695  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 16:19:35 CET 2021 duration: 0 connection: 425 statement: 999 resultset: 0 message: SET autocommit=1
+700  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 16:19:35 CET 2021 duration: 11 connection: 425 statement: 999 resultset: 0
+724  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+724  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+725  [main] INFO  CLIENT - 73 0 - quitter le programme
+725  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+726  [main] INFO  CLIENT - 73 2 - Gestion des Modeles
+726  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+726  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+726  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+726  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+727  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+727  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+727  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+727  [main] INFO  CLIENT - 73 10 - Vente
+674  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 16:45:28 CET 2021 duration: 1 connection: 426 statement: 999 resultset: 0 message: SET autocommit=1
+679  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 16:45:28 CET 2021 duration: 11 connection: 426 statement: 999 resultset: 0
+715  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+716  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+717  [main] INFO  CLIENT - 73 0 - quitter le programme
+718  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+718  [main] INFO  CLIENT - 73 2 - Gestion des Modeles
+718  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+718  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+719  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+719  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+719  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+719  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+719  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+719  [main] INFO  CLIENT - 73 10 - Vente
+637  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 16:45:43 CET 2021 duration: 0 connection: 427 statement: 999 resultset: 0 message: SET autocommit=1
+641  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 16:45:43 CET 2021 duration: 10 connection: 427 statement: 999 resultset: 0
+664  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+664  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+665  [main] INFO  CLIENT - 73 0 - quitter le programme
+666  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+666  [main] INFO  CLIENT - 73 2 - Gestion des Modeles
+666  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+666  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+666  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+666  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+667  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+667  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+667  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+667  [main] INFO  CLIENT - 73 10 - Vente
+6851 [main] INFO  CLIENT - 73 --- Menu Export --- 
+6851 [main] INFO  CLIENT - 73 Saisissez une action
+6852 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+6852 [main] INFO  CLIENT - 73 1 - Export Excel
+6852 [main] INFO  CLIENT - 73 2 - Export HTML
+639  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:02:41 CET 2021 duration: 1 connection: 428 statement: 999 resultset: 0 message: SET autocommit=1
+643  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:02:41 CET 2021 duration: 9 connection: 428 statement: 999 resultset: 0
+671  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+672  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+672  [main] INFO  CLIENT - 73 0 - quitter le programme
+673  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+673  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+673  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+674  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+674  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+674  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+674  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+674  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+674  [main] INFO  CLIENT - 73 10 - Vente
+2688 [main] INFO  CLIENT - 73 --- Menu Export --- 
+2689 [main] INFO  CLIENT - 73 Saisissez une action
+2689 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+2689 [main] INFO  CLIENT - 73 1 - Export Excel
+2689 [main] INFO  CLIENT - 73 2 - Export HTML
+4888 [main] INFO  CLIENT - 73 --- Menu Export Format HTML --- 
+4888 [main] INFO  CLIENT - 73 Saisissez une action
+4888 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+4889 [main] INFO  CLIENT - 73 1 - Listes des modèles
+4889 [main] INFO  CLIENT - 73 2 - Listes des transactions
+4889 [main] INFO  CLIENT - 73 3 - Listes des marques
+4889 [main] INFO  CLIENT - 73 4 - Listes des pieces
+4889 [main] INFO  CLIENT - 73 5 - Listes des catégories
+4889 [main] INFO  CLIENT - 73 6 - Listes des véhicules
+4890 [main] INFO  CLIENT - 73 7 - Listes des références
+4890 [main] INFO  CLIENT - 73 8 - Listes des références par véhicules
+11288 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:02:52 CET 2021 duration: 22 connection: 428 statement: 0 resultset: 1 message: select * from modele
+11288 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:02:52 CET 2021 duration: 31 connection: 428 statement: 0 resultset: 1
+11358 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+11358 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+11358 [main] TRACE org.apache.velocity - 93 *******************************************************************
+11359 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+11359 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+11359 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+11359 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+11359 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+11359 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+11359 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Appender).  Falling back to next log system...
+11359 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+11359 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+11365 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+11370 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+11371 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+11371 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+11371 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+11372 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+11393 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+11393 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+11397 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+11399 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+11400 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+11401 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+11403 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+11404 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+11407 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+11409 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+11411 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+11475 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+11484 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+11484 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+11484 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+11485 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+11485 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+11485 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+11485 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+11485 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+11485 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+11495 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+11495 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+11496 [main] TRACE org.apache.velocity - 93 *******************************************************************
+11496 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+11496 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+11496 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+11496 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+11496 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+11496 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+11496 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Appender).  Falling back to next log system...
+11497 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+11497 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+11497 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+11497 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+11497 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+11497 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+11498 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '.'
+11498 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+11498 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+11498 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+11499 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+11500 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+11500 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+11500 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+11501 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+11501 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+11501 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+11501 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+11502 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+11504 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+11504 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+11505 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+11505 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+11506 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+11506 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+11506 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+11506 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+11506 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+11506 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+11528 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/modeles.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+11551 [main] INFO  CLIENT - 73 --- Menu Export --- 
+11551 [main] INFO  CLIENT - 73 Saisissez une action
+11551 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+11551 [main] INFO  CLIENT - 73 1 - Export Excel
+11551 [main] INFO  CLIENT - 73 2 - Export HTML
+680  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:08:42 CET 2021 duration: 0 connection: 429 statement: 999 resultset: 0 message: SET autocommit=1
+686  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:08:42 CET 2021 duration: 10 connection: 429 statement: 999 resultset: 0
+714  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+714  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+715  [main] INFO  CLIENT - 73 0 - quitter le programme
+715  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+716  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+716  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+716  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+716  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+716  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+716  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+717  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+717  [main] INFO  CLIENT - 73 10 - Vente
+4490 [main] INFO  CLIENT - 73 --- Menu Export --- 
+4491 [main] INFO  CLIENT - 73 Saisissez une action
+4491 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+4491 [main] INFO  CLIENT - 73 1 - Export Excel
+4492 [main] INFO  CLIENT - 73 2 - Export HTML
+7130 [main] INFO  CLIENT - 73 --- Menu Export Format HTML --- 
+7131 [main] INFO  CLIENT - 73 Saisissez une action
+7131 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+7131 [main] INFO  CLIENT - 73 1 - Listes des modèles
+7131 [main] INFO  CLIENT - 73 2 - Listes des transactions
+7132 [main] INFO  CLIENT - 73 3 - Listes des marques
+7132 [main] INFO  CLIENT - 73 4 - Listes des pieces
+7132 [main] INFO  CLIENT - 73 5 - Listes des catégories
+7132 [main] INFO  CLIENT - 73 6 - Listes des véhicules
+7132 [main] INFO  CLIENT - 73 7 - Listes des références
+7132 [main] INFO  CLIENT - 73 8 - Listes des références par véhicules
+652  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:11:08 CET 2021 duration: 1 connection: 430 statement: 999 resultset: 0 message: SET autocommit=1
+656  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:11:08 CET 2021 duration: 9 connection: 430 statement: 999 resultset: 0
+684  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+684  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+685  [main] INFO  CLIENT - 73 0 - quitter le programme
+685  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+686  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+686  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+686  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+686  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+686  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+686  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+687  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+687  [main] INFO  CLIENT - 73 10 - Vente
+6909 [main] INFO  CLIENT - 73 --- Menu Export --- 
+6909 [main] INFO  CLIENT - 73 Saisissez une action
+6909 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+6909 [main] INFO  CLIENT - 73 1 - Export Excel
+6910 [main] INFO  CLIENT - 73 2 - Export HTML
+8813 [main] INFO  CLIENT - 73 --- Menu Export Format HTML --- 
+8813 [main] INFO  CLIENT - 73 Saisissez une action
+8814 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+8814 [main] INFO  CLIENT - 73 1 - Listes des modèles
+8814 [main] INFO  CLIENT - 73 2 - Listes des transactions
+8814 [main] INFO  CLIENT - 73 3 - Listes des marques
+8814 [main] INFO  CLIENT - 73 4 - Listes des pieces
+8814 [main] INFO  CLIENT - 73 5 - Listes des catégories
+8815 [main] INFO  CLIENT - 73 6 - Listes des véhicules
+8815 [main] INFO  CLIENT - 73 7 - Listes des références
+8815 [main] INFO  CLIENT - 73 8 - Listes des références par véhicules
+8815 [main] INFO  CLIENT - 73 9 - exporter toutes les listes en HTML
+658  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:11:43 CET 2021 duration: 1 connection: 431 statement: 999 resultset: 0 message: SET autocommit=1
+663  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:11:43 CET 2021 duration: 10 connection: 431 statement: 999 resultset: 0
+692  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+692  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+693  [main] INFO  CLIENT - 73 0 - quitter le programme
+694  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+694  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+694  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+694  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+695  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+695  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+695  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+695  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+695  [main] INFO  CLIENT - 73 10 - Vente
+3597 [main] INFO  CLIENT - 73 --- Menu Export --- 
+3598 [main] INFO  CLIENT - 73 Saisissez une action
+3598 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+3598 [main] INFO  CLIENT - 73 1 - Export Excel
+3599 [main] INFO  CLIENT - 73 2 - Export HTML
+5909 [main] INFO  CLIENT - 73 --- Menu Export Format HTML --- 
+5909 [main] INFO  CLIENT - 73 Saisissez une action
+5910 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+5910 [main] INFO  CLIENT - 73 1 - Listes des modèles
+5910 [main] INFO  CLIENT - 73 2 - Listes des transactions
+5910 [main] INFO  CLIENT - 73 3 - Listes des marques
+5910 [main] INFO  CLIENT - 73 4 - Listes des pieces
+5911 [main] INFO  CLIENT - 73 5 - Listes des catégories
+5911 [main] INFO  CLIENT - 73 6 - Listes des véhicules
+5911 [main] INFO  CLIENT - 73 7 - Listes des références
+5911 [main] INFO  CLIENT - 73 8 - Listes des références par véhicules
+5911 [main] INFO  CLIENT - 73 9 - exporter toutes les listes
+815  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:15:45 CET 2021 duration: 0 connection: 432 statement: 999 resultset: 0 message: SET autocommit=1
+820  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:15:45 CET 2021 duration: 10 connection: 432 statement: 999 resultset: 0
+849  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+850  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+851  [main] INFO  CLIENT - 73 0 - quitter le programme
+851  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+851  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+851  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+851  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+852  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+852  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+852  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+852  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+852  [main] INFO  CLIENT - 73 10 - Vente
+3574 [main] INFO  CLIENT - 73 --- Menu Export --- 
+3575 [main] INFO  CLIENT - 73 Saisissez une action
+3575 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+3575 [main] INFO  CLIENT - 73 1 - Export Excel
+3575 [main] INFO  CLIENT - 73 2 - Export HTML
+8933 [main] INFO  CLIENT - 73 --- Menu Export Format HTML --- 
+8933 [main] INFO  CLIENT - 73 Saisissez une action
+8934 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+8934 [main] INFO  CLIENT - 73 1 - Listes des modèles
+8934 [main] INFO  CLIENT - 73 2 - Listes des transactions
+8934 [main] INFO  CLIENT - 73 3 - Listes des marques
+8934 [main] INFO  CLIENT - 73 4 - Listes des pieces
+8935 [main] INFO  CLIENT - 73 5 - Listes des catégories
+8935 [main] INFO  CLIENT - 73 6 - Listes des véhicules
+8935 [main] INFO  CLIENT - 73 7 - Listes des références
+8935 [main] INFO  CLIENT - 73 8 - Listes des références par véhicules
+8935 [main] INFO  CLIENT - 73 9 - exporter toutes les listes
+16913 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:16:01 CET 2021 duration: 8 connection: 432 statement: 0 resultset: 1 message: select * from modele
+16913 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:16:01 CET 2021 duration: 27 connection: 432 statement: 0 resultset: 1
+16973 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+16974 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+16974 [main] TRACE org.apache.velocity - 93 *******************************************************************
+16974 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+16974 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+16974 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+16974 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+16974 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+16974 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+16975 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+16975 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+16975 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+16979 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+16984 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+16985 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+16985 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+16986 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+16986 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+17002 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+17003 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+17007 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+17009 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+17010 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+17012 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+17013 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+17015 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+17017 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+17019 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+17020 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+17089 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+17098 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+17098 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+17099 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+17099 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+17099 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+17099 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+17099 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+17099 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+17100 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+17109 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+17110 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+17110 [main] TRACE org.apache.velocity - 93 *******************************************************************
+17110 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+17110 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+17110 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+17111 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+17111 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+17111 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+17111 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+17111 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17111 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17111 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+17112 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17112 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+17112 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+17112 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '.'
+17112 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+17112 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+17112 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+17114 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+17115 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+17115 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+17115 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+17115 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+17115 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+17115 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+17116 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+17116 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+17117 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+17118 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+17118 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+17118 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+17118 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+17118 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+17118 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+17119 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+17119 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+17119 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+17140 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/modeles.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17176 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:16:02 CET 2021 duration: 12 connection: 432 statement: 0 resultset: 2 message: select * from transactions
+17176 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:16:02 CET 2021 duration: 1 connection: 432 statement: 0 resultset: 2
+17183 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+17183 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+17183 [main] TRACE org.apache.velocity - 93 *******************************************************************
+17183 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+17183 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+17184 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+17184 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+17184 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+17184 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+17184 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+17184 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17184 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17184 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+17185 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17185 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+17185 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+17185 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+17185 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+17186 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+17186 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+17187 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+17187 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+17187 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+17187 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+17187 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+17188 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+17188 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+17188 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+17188 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+17189 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+17190 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+17190 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+17190 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+17190 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+17190 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+17191 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+17191 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+17191 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+17191 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+17195 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/transactions.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17218 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:16:02 CET 2021 duration: 16 connection: 432 statement: 0 resultset: 3 message: select * from Marque order by id_marque
+17219 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:16:02 CET 2021 duration: 3 connection: 432 statement: 0 resultset: 3
+17221 [main] INFO  app.controllers.MarqueDaoImpl - 120 retourner list de marques, log id 1613319362054
+17225 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+17226 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+17226 [main] TRACE org.apache.velocity - 93 *******************************************************************
+17226 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+17226 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+17226 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+17226 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+17226 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+17226 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+17227 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+17227 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17227 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17227 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+17227 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17227 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+17227 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+17228 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+17228 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+17230 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+17230 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+17231 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+17231 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+17231 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+17232 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+17232 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+17232 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+17232 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+17232 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+17232 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+17233 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+17234 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+17234 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+17234 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+17234 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+17234 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+17234 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+17235 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+17235 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+17235 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+17239 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/marques.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17259 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:16:02 CET 2021 duration: 9 connection: 432 statement: 0 resultset: 4 message: select * from Piece 
+17259 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:16:02 CET 2021 duration: 2 connection: 432 statement: 0 resultset: 4
+17273 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+17273 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+17273 [main] TRACE org.apache.velocity - 93 *******************************************************************
+17273 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+17274 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+17274 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+17274 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+17274 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+17274 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+17274 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+17274 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17274 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17274 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+17275 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17275 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+17275 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+17275 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+17275 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+17275 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+17275 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+17277 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+17277 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+17277 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+17277 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+17277 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+17277 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+17278 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+17278 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+17278 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+17279 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+17279 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+17279 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+17280 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+17280 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+17280 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+17280 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+17280 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+17280 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+17280 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+17285 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/pieces.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17293 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:16:02 CET 2021 duration: 3 connection: 432 statement: 0 resultset: 5 message: select * from categorie order by id_categorie
+17294 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:16:02 CET 2021 duration: 1 connection: 432 statement: 0 resultset: 5
+17298 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+17299 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+17299 [main] TRACE org.apache.velocity - 93 *******************************************************************
+17299 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+17299 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+17299 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+17299 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+17299 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+17299 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+17299 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+17299 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17299 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17299 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+17300 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17300 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+17300 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+17300 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+17300 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+17300 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+17300 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+17301 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+17302 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+17302 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+17302 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+17302 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+17302 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+17302 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+17303 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+17303 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+17304 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+17304 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+17304 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+17304 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+17304 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+17305 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+17305 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+17305 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+17305 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+17305 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+17308 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/categories.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17319 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:16:02 CET 2021 duration: 6 connection: 432 statement: 0 resultset: 6 message: select * from Vehicule order by id_vehicule
+17320 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:16:02 CET 2021 duration: 1 connection: 432 statement: 0 resultset: 6
+17324 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+17324 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+17324 [main] TRACE org.apache.velocity - 93 *******************************************************************
+17324 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+17324 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+17324 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+17324 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+17324 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+17325 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+17325 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+17325 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17325 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17325 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+17325 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17325 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+17325 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+17325 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+17325 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+17326 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+17326 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+17327 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+17327 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+17327 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+17327 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+17327 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+17327 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+17327 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+17327 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+17327 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+17329 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+17329 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+17329 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+17329 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+17329 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+17329 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+17329 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+17329 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+17330 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+17330 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+17334 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/vehicules.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17354 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:16:02 CET 2021 duration: 13 connection: 432 statement: 0 resultset: 7 message: select * from Reference 
+17354 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:16:02 CET 2021 duration: 1 connection: 432 statement: 0 resultset: 7
+17361 [main] INFO  app.controllers.ReferenceDaoImpl - 134 retourner un list des refs, log id 1613319362194
+17363 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+17364 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+17364 [main] TRACE org.apache.velocity - 93 *******************************************************************
+17364 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+17364 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+17364 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+17364 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+17364 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+17364 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+17364 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+17364 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17364 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17365 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+17365 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17365 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+17366 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+17366 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+17366 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+17366 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+17366 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+17367 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+17367 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+17368 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+17368 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+17368 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+17368 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+17368 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+17368 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+17368 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+17369 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+17369 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+17369 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+17370 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+17370 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+17370 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+17370 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+17370 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+17370 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+17370 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+17375 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/references.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17383 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:16:02 CET 2021 duration: 3 connection: 432 statement: 0 resultset: 8 message: select * from referencevehicule
+17383 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:16:02 CET 2021 duration: 2 connection: 432 statement: 0 resultset: 8
+17384 [main] INFO  app.controllers.RefVehiculeImpl - 90 retourner un list des refs, log id 1613319362217
+17386 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+17387 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+17387 [main] TRACE org.apache.velocity - 93 *******************************************************************
+17387 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+17387 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+17387 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+17387 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+17387 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+17387 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+17387 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+17387 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17387 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+17387 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+17388 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17388 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+17388 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+17388 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+17388 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+17388 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+17388 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+17389 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+17389 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+17389 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+17390 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+17390 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+17390 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+17390 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+17390 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+17391 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+17403 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+17403 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+17403 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+17404 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+17404 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+17404 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+17404 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+17404 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+17404 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+17404 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+17407 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/referencesvehicules.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+17409 [main] INFO  CLIENT - 73 --- Menu Export --- 
+17410 [main] INFO  CLIENT - 73 Saisissez une action
+17410 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+17410 [main] INFO  CLIENT - 73 1 - Export Excel
+17410 [main] INFO  CLIENT - 73 2 - Export HTML
+261376 [main] INFO  CLIENT - 73 Retour au menu principal !
+261376 [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+261376 [main] INFO  CLIENT - 73 0 - quitter le programme
+261376 [main] INFO  CLIENT - 73 1 - Gestion des Marques
+261376 [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+261376 [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+261377 [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+261377 [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+261377 [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+261377 [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+261377 [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+261377 [main] INFO  CLIENT - 73 10 - Vente
+276516 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:20:21 CET 2021 duration: 12 connection: 432 statement: 0 resultset: 9 message: select year(t.Date_Vente ) as Annee, sum(prix) as Total from transactions t inner join piece p on t.Id_Piece = p.Id_Piece inner join reference r on r.Id_Reference= p.Id_Reference group by year(t.Date_Vente)
+276516 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:20:21 CET 2021 duration: 1 connection: 432 statement: 0 resultset: 9
+276517 [main] INFO  CLIENT - 73 Annee - Total Chiffre d'Affaire
+276517 [main] INFO  CLIENT - 73  2021 - 200€
+276518 [main] INFO  CLIENT - 73  2020 - 225€
+276518 [main] INFO  CLIENT - 73  2010 - 150€
+276518 [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+276518 [main] INFO  CLIENT - 73 0 - quitter le programme
+276518 [main] INFO  CLIENT - 73 1 - Gestion des Marques
+276518 [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+276518 [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+276518 [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+276518 [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+276519 [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+276519 [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+276519 [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+276519 [main] INFO  CLIENT - 73 10 - Vente
+704  [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:22:13 CET 2021 duration: 0 connection: 433 statement: 999 resultset: 0 message: SET autocommit=1
+709  [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:22:13 CET 2021 duration: 9 connection: 433 statement: 999 resultset: 0
+738  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+738  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+739  [main] INFO  CLIENT - 73 0 - quitter le programme
+740  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+740  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+740  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+740  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+741  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+741  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+741  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+741  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+741  [main] INFO  CLIENT - 73 10 - Vente
+3049 [main] INFO  CLIENT - 73 --- Menu Export --- 
+3049 [main] INFO  CLIENT - 73 Saisissez une action
+3049 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+3050 [main] INFO  CLIENT - 73 1 - Export Excel
+3050 [main] INFO  CLIENT - 73 2 - Export HTML
+5241 [main] INFO  CLIENT - 73 --- Menu Export Format HTML --- 
+5241 [main] INFO  CLIENT - 73 Saisissez une action
+5241 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+5241 [main] INFO  CLIENT - 73 1 - Listes des modèles
+5242 [main] INFO  CLIENT - 73 2 - Listes des transactions
+5242 [main] INFO  CLIENT - 73 3 - Listes des marques
+5242 [main] INFO  CLIENT - 73 4 - Listes des pieces
+5242 [main] INFO  CLIENT - 73 5 - Listes des catégories
+5242 [main] INFO  CLIENT - 73 6 - Listes des véhicules
+5242 [main] INFO  CLIENT - 73 7 - Listes des références
+5243 [main] INFO  CLIENT - 73 8 - Listes des références par véhicules
+5243 [main] INFO  CLIENT - 73 9 - exporter toutes les listes
+37281 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:22:50 CET 2021 duration: 5 connection: 433 statement: 0 resultset: 1 message: select * from modele
+37281 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:22:50 CET 2021 duration: 30 connection: 433 statement: 0 resultset: 1
+37342 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+37342 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+37342 [main] TRACE org.apache.velocity - 93 *******************************************************************
+37342 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+37342 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+37342 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+37342 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+37342 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+37342 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+37342 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+37342 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37342 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37346 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+37350 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37352 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+37352 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+37353 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+37353 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+37369 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+37370 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+37373 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+37375 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+37377 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+37379 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+37380 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+37382 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+37384 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+37386 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+37388 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+37460 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+37470 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+37470 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+37471 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+37471 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+37471 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+37471 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+37472 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+37472 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+37472 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+37482 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+37482 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+37482 [main] TRACE org.apache.velocity - 93 *******************************************************************
+37482 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+37482 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+37482 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+37482 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+37482 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+37483 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+37483 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+37483 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37483 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37483 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+37483 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37483 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+37484 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+37484 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '.'
+37484 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+37484 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+37484 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+37486 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+37487 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+37487 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+37487 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+37487 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+37487 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+37487 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+37487 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+37488 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+37489 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+37489 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+37489 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+37490 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+37490 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+37490 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+37490 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+37490 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+37490 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+37490 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+37512 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/modeles.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37543 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:22:50 CET 2021 duration: 5 connection: 433 statement: 0 resultset: 2 message: select * from transactions
+37543 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:22:50 CET 2021 duration: 2 connection: 433 statement: 0 resultset: 2
+37549 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+37549 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+37549 [main] TRACE org.apache.velocity - 93 *******************************************************************
+37549 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+37549 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+37550 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+37550 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+37550 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+37550 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+37550 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+37550 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37550 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37550 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+37551 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37551 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+37551 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+37552 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+37552 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+37552 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+37552 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+37554 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+37554 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+37554 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+37555 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+37555 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+37555 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+37555 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+37555 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+37556 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+37558 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+37558 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+37559 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+37559 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+37559 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+37560 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+37560 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+37560 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+37560 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+37560 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+37565 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/transactions.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37574 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:22:50 CET 2021 duration: 1 connection: 433 statement: 0 resultset: 3 message: select * from Marque order by id_marque
+37575 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:22:50 CET 2021 duration: 3 connection: 433 statement: 0 resultset: 3
+37577 [main] INFO  app.controllers.MarqueDaoImpl - 120 retourner list de marques, log id 1613319770729
+37581 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+37581 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+37581 [main] TRACE org.apache.velocity - 93 *******************************************************************
+37581 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+37581 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+37581 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+37581 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+37581 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+37581 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+37581 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+37582 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37582 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37582 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+37582 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37582 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+37582 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+37582 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+37582 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+37584 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+37584 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+37586 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+37586 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+37586 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+37586 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+37587 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+37587 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+37587 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+37587 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+37588 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+37589 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+37590 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+37590 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+37590 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+37590 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+37591 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+37591 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+37591 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+37591 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+37591 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+37594 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/marques.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37607 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:22:50 CET 2021 duration: 3 connection: 433 statement: 0 resultset: 4 message: select * from Piece 
+37607 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:22:50 CET 2021 duration: 2 connection: 433 statement: 0 resultset: 4
+37617 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+37618 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+37618 [main] TRACE org.apache.velocity - 93 *******************************************************************
+37618 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+37618 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+37618 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+37618 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+37618 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+37618 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+37618 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+37619 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37619 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37619 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+37619 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37619 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+37620 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+37620 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+37620 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+37620 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+37620 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+37621 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+37621 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+37622 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+37622 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+37622 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+37622 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+37622 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+37622 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+37623 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+37624 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+37624 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+37624 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+37624 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+37624 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+37624 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+37625 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+37625 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+37625 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+37625 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+37628 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/pieces.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37634 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:22:50 CET 2021 duration: 1 connection: 433 statement: 0 resultset: 5 message: select * from categorie order by id_categorie
+37635 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:22:50 CET 2021 duration: 1 connection: 433 statement: 0 resultset: 5
+37640 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+37641 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+37641 [main] TRACE org.apache.velocity - 93 *******************************************************************
+37641 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+37641 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+37641 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+37641 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+37641 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+37642 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+37642 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+37642 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37642 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37642 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+37642 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37643 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+37643 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+37643 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+37643 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+37643 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+37643 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+37645 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+37645 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+37645 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+37646 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+37646 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+37646 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+37646 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+37646 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+37646 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+37648 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+37648 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+37648 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+37649 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+37649 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+37649 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+37649 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+37649 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+37649 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+37650 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+37655 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/categories.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37662 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:22:50 CET 2021 duration: 3 connection: 433 statement: 0 resultset: 6 message: select * from Vehicule order by id_vehicule
+37662 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:22:50 CET 2021 duration: 1 connection: 433 statement: 0 resultset: 6
+37667 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+37667 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+37667 [main] TRACE org.apache.velocity - 93 *******************************************************************
+37667 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+37667 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+37667 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+37667 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+37667 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+37667 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+37667 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+37667 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37668 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37668 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+37668 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37668 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+37668 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+37668 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+37669 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+37669 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+37669 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+37671 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+37671 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+37672 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+37672 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+37672 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+37672 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+37672 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+37672 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+37673 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+37674 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+37674 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+37674 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+37675 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+37675 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+37675 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+37675 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+37675 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+37675 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+37676 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+37680 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/vehicules.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37692 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:22:50 CET 2021 duration: 1 connection: 433 statement: 0 resultset: 7 message: select * from Reference 
+37692 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:22:50 CET 2021 duration: 1 connection: 433 statement: 0 resultset: 7
+37699 [main] INFO  app.controllers.ReferenceDaoImpl - 134 retourner un list des refs, log id 1613319770851
+37703 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+37703 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+37703 [main] TRACE org.apache.velocity - 93 *******************************************************************
+37703 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+37704 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+37704 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+37704 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+37704 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+37704 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+37704 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+37704 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37704 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37704 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+37704 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37705 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+37705 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+37705 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+37705 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+37705 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+37705 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+37706 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+37706 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+37706 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+37707 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+37707 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+37707 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+37707 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+37707 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+37707 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+37720 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+37721 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+37721 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+37721 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+37721 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+37721 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+37721 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+37722 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+37722 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+37722 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+37726 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/references.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37733 [main] INFO  MySQL - 91 QUERY created: Sun Feb 14 17:22:50 CET 2021 duration: 2 connection: 433 statement: 0 resultset: 8 message: select * from referencevehicule
+37733 [main] INFO  MySQL - 91 FETCH created: Sun Feb 14 17:22:50 CET 2021 duration: 2 connection: 433 statement: 0 resultset: 8
+37734 [main] INFO  app.controllers.RefVehiculeImpl - 90 retourner un list des refs, log id 1613319770886
+37737 [main] DEBUG org.apache.velocity - 100 CommonsLogLogChute name is 'org.apache.velocity'
+37738 [main] DEBUG org.apache.velocity - 100 Initializing Velocity, Calling init()...
+37738 [main] TRACE org.apache.velocity - 93 *******************************************************************
+37738 [main] DEBUG org.apache.velocity - 100 Starting Apache Velocity v1.7 (compiled: 2010-11-19 12:14:37)
+37738 [main] TRACE org.apache.velocity - 93 RuntimeInstance initializing.
+37738 [main] DEBUG org.apache.velocity - 100 Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+37738 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+37738 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.AvalonLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log/format/Formatter).  Falling back to next log system...
+37738 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+37738 [main] DEBUG org.apache.velocity - 100 Target log system for org.apache.velocity.runtime.log.Log4JLogChute is not available (java.lang.NoClassDefFoundError: org/apache/log4j/Layout).  Falling back to next log system...
+37738 [main] DEBUG org.apache.velocity - 100 Trying to use logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37738 [main] DEBUG org.apache.velocity - 100 Using logger class org.apache.velocity.runtime.log.CommonsLogLogChute
+37738 [main] TRACE org.apache.velocity - 93 Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+37739 [main] DEBUG org.apache.velocity - 100 ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37739 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization starting.
+37739 [main] DEBUG org.apache.velocity - 100 Do unicode file recognition:  false
+37739 [main] DEBUG org.apache.velocity - 100 FileResourceLoader : adding path '/resources/templates/'
+37739 [main] TRACE org.apache.velocity - 93 FileResourceLoader : initialization complete.
+37739 [main] DEBUG org.apache.velocity - 100 ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl) with class java.util.Collections$SynchronizedMap cache map.
+37739 [main] TRACE org.apache.velocity - 93 Default ResourceManager initialization complete.
+37740 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Stop
+37741 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Define
+37741 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Break
+37741 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Evaluate
+37741 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+37741 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+37741 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+37741 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Include
+37742 [main] DEBUG org.apache.velocity - 100 Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+37743 [main] DEBUG org.apache.velocity - 100 Created '20' parsers.
+37743 [main] TRACE org.apache.velocity - 93 Velocimacro : initialization starting.
+37743 [main] DEBUG org.apache.velocity - 100 Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+37744 [main] DEBUG org.apache.velocity - 100 Velocimacro : Default library not found.
+37744 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInline = true : VMs can be defined inline in templates
+37744 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+37744 [main] DEBUG org.apache.velocity - 100 Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+37744 [main] DEBUG org.apache.velocity - 100 Velocimacro : autoload off : VM system will not automatically reload global library macros
+37744 [main] TRACE org.apache.velocity - 93 Velocimacro : Velocimacro : initialization complete.
+37744 [main] TRACE org.apache.velocity - 93 RuntimeInstance successfully initialized.
+37747 [main] DEBUG org.apache.velocity - 100 ResourceManager : found /resources/templates/referencesvehicules.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+37750 [main] INFO  CLIENT - 73 --- Menu Export --- 
+37750 [main] INFO  CLIENT - 73 Saisissez une action
+37751 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
+37751 [main] INFO  CLIENT - 73 1 - Export Excel
+37751 [main] INFO  CLIENT - 73 2 - Export HTML
