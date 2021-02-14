@@ -9,12 +9,12 @@ import app.export.ExcelExport;
 import app.menu.action.Action;
 import app.menu.saisie.Ihm;
 
-public final class ActionExportExcel extends Action {
+public final class ActionExportHtml extends Action {
 
-	private static final int ID = 1;
-	private static final String DESC = "Export Excel";
+	private static final int ID = 2;
+	private static final String DESC = "Export HTML";
 	
-	public ActionExportExcel() {
+	public ActionExportHtml() {
 		super(ID, DESC);
 	}
 	
@@ -22,12 +22,20 @@ public final class ActionExportExcel extends Action {
 	public boolean executer() {
 		TreeMap<Integer,GetList> actions = new TreeMap<>();
 		newAction(actions, LesListes.RETOUR);
-		newAction(actions, LesListes.LIST_PIECE_DISPO_VOITURE_RECENTE);
-		newAction(actions, LesListes.LIST_CHIFFRE_AFFAIRE);
+		newAction(actions, LesListes.MODELES);
+		newAction(actions, LesListes.TRANSACTIONS);
+		newAction(actions, LesListes.MARQUES);
+		newAction(actions, LesListes.PIECES);
+		newAction(actions, LesListes.CATEGORIES);
+		newAction(actions, LesListes.VEHICULES);
+		newAction(actions, LesListes.REFERENCES);
+		newAction(actions, LesListes.REFERENCES_VEHICULES);
+		newAction(actions, LesListes.ALL_LIST);
+		
 		List<String[]> returnMenu;
 		int vActionSaisie;
 		do {
-			Ihm.afficherClient("--- Menu Export Format EXCEL --- ");
+			Ihm.afficherClient("--- Menu Export Format HTML --- ");
 			Ihm.afficherClient("Saisissez une action");
 			for (GetList action : actions.values()) {
 				Ihm.afficherClient(action.getId()+ " - " +action.getDescription());

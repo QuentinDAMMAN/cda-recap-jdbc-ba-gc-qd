@@ -1,6 +1,7 @@
 package app.menu.action;
 
 import app.menu.action.export.ActionExportExcel;
+import app.menu.action.export.ActionExportHtml;
 
 public interface LesActions {
 	public static final Quitter QUITTER = new Quitter();
@@ -15,7 +16,9 @@ public interface LesActions {
 	public static final ActionPieceDispoVoitureRecente ACTION_PIECE_DISPO_VOITURE_RECENTE = new ActionPieceDispoVoitureRecente();
 	public static final ActionExport ACTION_EXPORT = new ActionExport();
 	public static final ActionExportExcel ACTION_EXPORT_EXCEL = new ActionExportExcel();
+	public static final ActionExportHtml ACTION_EXPORT_HTML = new ActionExportHtml();
 	public static final Retour RETOUR = new Retour();
 	public static final ActionVente VENTE = new ActionVente();
+
 	
 }
