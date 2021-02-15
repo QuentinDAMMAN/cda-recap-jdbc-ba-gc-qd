@@ -19,6 +19,7 @@ public interface LesActions {
 	public static final ActionExportHtml ACTION_EXPORT_HTML = new ActionExportHtml();
 	public static final Retour RETOUR = new Retour();
 	public static final ActionVente VENTE = new ActionVente();
+	public static final ActionSomeTotalePiecesDispo ACTION_AFFICHER_PIECES_DISPONIBLE = new ActionSomeTotalePiecesDispo();
 
 	
 }

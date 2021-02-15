@@ -6,7 +6,7 @@ import app.action.Afficher3voitureToutePieceDisponible;
 
 public class ListPieceDispoVoitureRecente extends GetList {
 	private static final int ID = 1;
-	private static final String DESC = "Listes des pièces pour les 3 voitures les plus récentes";
+	private static final String DESC = "le nombre et la somme totale des pièces disponibles(pas encore vendues)";
 	private static final String NOM = "LISTE_PIECE_DISPO_VOITURE_RECENTE";
 
 	protected ListPieceDispoVoitureRecente() {
