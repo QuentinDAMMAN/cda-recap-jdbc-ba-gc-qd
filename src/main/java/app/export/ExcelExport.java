@@ -1,5 +1,6 @@
 package app.export;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -11,6 +12,8 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;
+
+import app.menu.saisie.Ihm;
 
 public class ExcelExport {
 	public static void exec(List<String[]> data, String nom) {
@@ -27,8 +30,18 @@ public class ExcelExport {
 				cell.setCellValue(dataCell.trim());
 			}
 		}
-		try (FileOutputStream outputStream = new FileOutputStream(nom+" "+LocalDate.now()+".xlsx")) {
+		String fileName = "C:/Temp/"+nom+" "+LocalDate.now()+".xlsx";
+		File file = new File(fileName);
+		try {
+			file.getParentFile().mkdir();
+			file.createNewFile();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try (FileOutputStream outputStream = new FileOutputStream(file)) {
             workbook.write(outputStream);
+            Ihm.afficherClient("Fichier créé à l'endroit suivant : " + file.getAbsolutePath().toString());
         } catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
