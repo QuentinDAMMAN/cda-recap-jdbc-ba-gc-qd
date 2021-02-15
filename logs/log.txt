@@ -6057,3 +6057,39 @@ Saisissez une action
 37751 [main] INFO  CLIENT - 73 0 - Retourner au menu précédent
 37751 [main] INFO  CLIENT - 73 1 - Export Excel
 37751 [main] INFO  CLIENT - 73 2 - Export HTML
+172  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+174  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+178  [main] INFO  CLIENT - 73 0 - quitter le programme
+178  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+178  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+178  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+179  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+179  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+179  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+179  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+179  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+179  [main] INFO  CLIENT - 73 10 - Vente
+788898 [main] INFO  CLIENT - 73 Mauvaise Saisie, Veuillez saisir un nombre
+788901 [main] ERROR DEV - 38 Erreur de saisie
+java.util.InputMismatchException: null
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at app.menu.saisie.Ihm.inputInt(Ihm.java:33)
+	at app.Main.main(Main.java:36)
+161  [main] INFO  CLIENT - 73 Bienvenue sur votre interface de gestion des pièces détachées.
+163  [main] INFO  CLIENT - 73 ********************
+Saisissez une action
+167  [main] INFO  CLIENT - 73 0 - quitter le programme
+167  [main] INFO  CLIENT - 73 1 - Gestion des Marques
+167  [main] INFO  CLIENT - 73 3 - Gestion des Catégories de pièces
+167  [main] INFO  CLIENT - 73 4 - Gestion des Références de pièces
+167  [main] INFO  CLIENT - 73 5 - Gestion des Vehicules
+167  [main] INFO  CLIENT - 73 6 - Gestion des Pièces
+167  [main] INFO  CLIENT - 73 7 - Afficher le chiffre d'affaire par année
+168  [main] INFO  CLIENT - 73 8 - Afficher les pièces disponibles pour les 3 modeles les plus récents
+168  [main] INFO  CLIENT - 73 9 - Exporter des Tableaux
+168  [main] INFO  CLIENT - 73 10 - Vente
+168  [main] INFO  CLIENT - 73 11 - le nombre et la somme totale des pièces disponibles(pas encore vendues)
